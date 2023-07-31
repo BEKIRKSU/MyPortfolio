@@ -5,7 +5,6 @@ import Profile from './Profile';
 
 function App() {
 
-
   return (
     <>
     <Router>
