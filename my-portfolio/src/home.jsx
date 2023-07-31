@@ -1,26 +1,13 @@
-import React, { useState } from 'react';
-import Profile from './profile'; // Import the Profile component
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
-  const [showProfile, setShowProfile] = useState(false);
-
-  const handleProfileClick = () => {
-    setShowProfile(true);
-  };
-
-  const handleCloseProfile = () => {
-    setShowProfile(false);
-  };
-
   return (
     <div className="App">
       {/* Profile Button */}
-      <button className="profile-button" onClick={handleProfileClick}>
-        Profile
-      </button>
-
-      {/* Profile Modal */}
-      {showProfile && <Profile onClose={handleCloseProfile} />}
+      <Link to="/profile">
+        <button className="profile-button">Profile</button>
+      </Link>
 
       <header className="App-header">
         <h1>My Portfolio</h1>

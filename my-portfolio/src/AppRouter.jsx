@@ -3,20 +3,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Profile from './Profile';
 
-function App() {
-
-
+const AppRouter = () => {
   return (
-    <>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/Profile" element={<Profile />} />
       </Routes>
     </Router>
-   </>
   );
-}
+};
 
-export default App;
-       
+export default AppRouter;

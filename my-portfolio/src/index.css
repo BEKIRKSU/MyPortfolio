@@ -1,6 +1,6 @@
 
 .profile-modal {
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -8,6 +8,7 @@
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 999;
+  margin-top: 600px;
 }
 
 .profile-header {
