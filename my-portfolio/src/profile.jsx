@@ -1,8 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './profile.css'; // Import the CSS file with the styles from the previous example
 
 const ProfilePage = () => {
+  const navigate = useNavigate();
+
+  const handleBackToHome = () => {
+    navigate('/');
+  };
+
   return (
     <div className="profile-container">
       <div className="profile-photo">
@@ -42,14 +48,13 @@ const ProfilePage = () => {
         {/* Add more contact details as needed */}
       </div>
       <div className="back-to-home">
-        <Link to="/">Back to Home</Link>
+        <button onClick={handleBackToHome}>Back to Home</button>
       </div>
     </div>
   );
 };
 
 export default ProfilePage;
-
 
 
 
