@@ -11,11 +11,18 @@ const ProfilePage = () => {
 
   return (
     <div className="profile-container">
-      <div className="profile-photo">
+     <div
+        className="profile-photo"
+        style={{
+          backgroundImage:
+            'url("https://media.gettyimages.com/id/73635897/photo/manchester-united-kingdom-manchester-uniteds-cristiano-ronaldo-celebrates-scoring-from-the.jpg?s=612x612&w=gi&k=20&c=cv_-zHdBoBkj57jpHEBkIIDNcblr_FOeIpsRVA1mZQw=")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         {/* Add your profile photo here */}
-        <img src="https://images.firstpost.com/wp-content/uploads/2021/08/Cristiano-Ronaldo-640-AP1.jpg" alt="Profile Photo" />
       </div>
-      <div className="profile-details">
+      <div className="details-container">
         <h2>Profile Details</h2>
         <ul>
           <li>
