@@ -35,6 +35,70 @@ const ProfilePage = () => {
             </select>
           </li>
           <li>
+            <label htmlFor="nationality">Nationality:</label>
+            <select id="nationality">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="work-visa">Work Visa:</label>
+            <select id="work-visa">
+              <option value="H1B">H1B</option>
+              <option value="L1">L1</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="nationality">Nationality:</label>
+            <select id="nationality">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="work-visa">Work Visa:</label>
+            <select id="work-visa">
+              <option value="H1B">H1B</option>
+              <option value="L1">L1</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="nationality">Nationality:</label>
+            <select id="nationality">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="work-visa">Work Visa:</label>
+            <select id="work-visa">
+              <option value="H1B">H1B</option>
+              <option value="L1">L1</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="nationality">Nationality:</label>
+            <select id="nationality">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="work-visa">Work Visa:</label>
+            <select id="work-visa">
+              <option value="H1B">H1B</option>
+              <option value="L1">L1</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
             <label htmlFor="dob">Date of Birth:</label>
             <input type="date" id="dob" />
           </li>
