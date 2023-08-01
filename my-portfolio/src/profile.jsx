@@ -13,8 +13,8 @@ const ProfilePage = () => {
 
   return (
     <div>
-    <div class="name-area">
-        <h2>NAME SURNAME</h2>
+    <div className="name-area">
+        <h2 className="name-surname">NAME SURNAME</h2>
       </div>
     <div className="profile-container">
      <div
