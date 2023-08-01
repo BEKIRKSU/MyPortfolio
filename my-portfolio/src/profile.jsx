@@ -13,7 +13,7 @@ const ProfilePage = () => {
     <div className="profile-container">
       <div className="profile-photo">
         {/* Add your profile photo here */}
-        {/* <img src="path/to/profile-photo.jpg" alt="Profile Photo" /> */}
+        <img src="https://images.firstpost.com/wp-content/uploads/2021/08/Cristiano-Ronaldo-640-AP1.jpg" alt="Profile Photo" />
       </div>
       <div className="profile-details">
         <h2>Profile Details</h2>
