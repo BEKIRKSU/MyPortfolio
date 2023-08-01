@@ -10,6 +10,10 @@ const ProfilePage = () => {
   };
 
   return (
+    <div>
+    <div class="name-area">
+        <h2>NAME SURNAME</h2>
+      </div>
     <div className="profile-container">
      <div
         className="profile-photo"
@@ -121,6 +125,32 @@ const ProfilePage = () => {
       <div className="back-to-home">
         <button onClick={handleBackToHome}>Back to Home</button>
       </div>
+    </div>
+    <div className="body-of-CV">
+    <li>
+            <label htmlFor="nationality">Nationality:</label>
+            <select id="nationality">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+          <li>
+            <label htmlFor="nationality">Nationality:</label>
+            <select id="nationality">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              {/* Add more options as needed */}
+            </select>
+          </li> <li>
+            <label htmlFor="nationality">Nationality:</label>
+            <select id="nationality">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              {/* Add more options as needed */}
+            </select>
+          </li>
+    </div>
     </div>
   );
 };
