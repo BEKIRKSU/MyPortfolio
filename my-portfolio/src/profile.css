@@ -7,8 +7,8 @@
   
   .profile-photo {
 	width: 200px;
-	height: 200px;
-	border-radius: 50%;
+	height: 300px;
+	border-radius: 10%;
 	overflow: hidden;
 	margin-right: 20px;
 	/* Add styles for the photo container, e.g., border, box-shadow, etc. */
