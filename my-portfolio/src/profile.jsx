@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './profile.css'; // Import the CSS file with the styles from the previous example
+import ProfileForm from './ProfileForm';
 
 const ProfilePage = () => {
   const navigate = useNavigate();
@@ -127,29 +128,9 @@ const ProfilePage = () => {
       </div>
     </div>
     <div className="body-of-CV">
-    <li>
-            <label htmlFor="nationality">Nationality:</label>
-            <select id="nationality">
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="nationality">Nationality:</label>
-            <select id="nationality">
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              {/* Add more options as needed */}
-            </select>
-          </li> <li>
-            <label htmlFor="nationality">Nationality:</label>
-            <select id="nationality">
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
+          <div>
+            <ProfileForm />
+          </div>
     </div>
     </div>
   );
