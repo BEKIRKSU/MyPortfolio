@@ -15,7 +15,8 @@ const ProfilePage = () => {
     <div>
     <div className="name-area">
         <h2 className="name-surname">NAME SURNAME</h2>
-      </div>
+        <h1 className="watermark">BK</h1>
+    </div>
     <div className="profile-container">
      <div
         className="profile-photo"
