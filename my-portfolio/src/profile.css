@@ -1,5 +1,7 @@
 .name-area {
-	padding-left:25px;
+	background-color: #0d0c41;
+	min-height: 95px;
+	width: 100%;
 }
 
 .profile-container {
