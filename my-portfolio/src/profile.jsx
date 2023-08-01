@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './profile.css'; // Import the CSS file with the styles from the previous example
 import ProfileForm from './ProfileForm';
+import MediaUpload from './MediaUpload';
 
 const ProfilePage = () => {
   const navigate = useNavigate();
@@ -130,6 +131,7 @@ const ProfilePage = () => {
     <div className="body-of-CV">
           <div>
             <ProfileForm />
+            <MediaUpload />
           </div>
     </div>
     </div>
