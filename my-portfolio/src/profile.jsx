@@ -30,7 +30,9 @@ const ProfilePage = () => {
         {/* Add your profile photo here */}
       </div>
       <div className="details-container">
-        <h2>Profile Details</h2>
+        <div className="top-profile-heading">
+        <h3>Profile Details</h3>
+        </div>
         <ul>
           <li>
             <label htmlFor="nationality">Nationality:</label>
@@ -120,7 +122,9 @@ const ProfilePage = () => {
         </ul>
       </div>
       <div className="contact-details">
-        <h2>Contact Details</h2>
+        <div className="top-profile-heading">
+        <h3>Contact Details</h3>
+        </div>
         <p>Email: example@example.com</p>
         <p>Phone: +1 (123) 456-7890</p>
         {/* Add more contact details as needed */}
