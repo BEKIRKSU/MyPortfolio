@@ -48,7 +48,7 @@
   pointer-events: none;
 }
 
-button {
+/* button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 18px;
@@ -57,4 +57,4 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-}
+} */
