@@ -17,10 +17,10 @@
     top: -45px; 
 }
 .profile-container {
-	display: flex;
-	flex-direction: row; 
-	align-items: flex-start;
-	padding: 20px;
+	align-items: centre;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    justify-content: space-between;
   }
   
   .profile-photo {
@@ -30,6 +30,13 @@
 	overflow: hidden;
 	margin-right: 20px;
 	/* Add styles for the photo container, e.g., border, box-shadow, etc. */
+  }
+
+  .top-profile-heading {
+	align-items: centre;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    justify-content: space-between;
   }
   
   .details-container {
