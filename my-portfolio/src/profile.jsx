@@ -15,6 +15,8 @@ const ProfilePage = () => {
     <div>
     <div className="name-area">
         <h2 className="name-surname">NAME SURNAME</h2>
+        {/* <div className="back-to-home"> */}
+      {/* </div> */}
         <h1 className="watermark">BK</h1>
     </div>
     <div className="profile-container">
@@ -128,9 +130,6 @@ const ProfilePage = () => {
         <p>Email: example@example.com</p>
         <p>Phone: +1 (123) 456-7890</p>
         {/* Add more contact details as needed */}
-      </div>
-      <div className="back-to-home">
-        <button onClick={handleBackToHome}>Back to Home</button>
       </div>
     </div>
     <div className="body-of-CV">
