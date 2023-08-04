@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const HomePage = () => {
   return (
@@ -14,6 +15,9 @@ const HomePage = () => {
         <button class="make-my-portfolio-button">Make my digital portfolio</button>
         </Link>
       </header>
+    <div>
+      <Footer />
+      </div>
     </div>
   );
 };
