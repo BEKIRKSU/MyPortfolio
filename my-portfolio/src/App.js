@@ -1,21 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
 import Profile from './Profile';
-import SignUp from './SignUp'; // Updated the component name to follow proper naming conventions
+import SignUp from './Sign-up'; 
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Switch>
+      <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/navbar" element={<Navbar />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/sign-up" element={<SignUp />} />
-      </Switch>
+      </Routes>
     </Router>
   );
 }
 
 export default App;
+
+
+
+  
