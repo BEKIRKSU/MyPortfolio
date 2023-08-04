@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Profile from './Profile';
 import SignUp from './Sign-up'; 
+import Footer from './Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/navbar" element={<Navbar />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>
   );
