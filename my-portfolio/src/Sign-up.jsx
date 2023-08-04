@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from './Navbar';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -24,6 +25,7 @@ const SignUp = () => {
 
   return (
     <div>
+      <Navbar />
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <div>
