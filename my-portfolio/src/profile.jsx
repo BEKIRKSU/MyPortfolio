@@ -17,7 +17,7 @@ const ProfilePage = () => {
       <Navbar onBackToHome={handleBackToHome}/>
     <div className="name-area">
         <h2 className="name-surname">NAME SURNAME</h2>
-        <h1 className="watermark">BK</h1>
+        <h1 className="watermark">V/U</h1>
     </div>
     <div className="profile-container">
      <div
