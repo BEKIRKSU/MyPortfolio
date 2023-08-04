@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './profile.css'; // Import the CSS file with the styles from the previous example
+import Navbar from './Navbar';
+import './profile.css';
 import ProfileForm from './ProfileForm';
 import MediaUpload from './MediaUpload';
 
@@ -13,6 +14,7 @@ const ProfilePage = () => {
 
   return (
     <div>
+      <Navbar onBackToHome={handleBackToHome}/>
     <div className="name-area">
         <h2 className="name-surname">NAME SURNAME</h2>
         <h1 className="watermark">BK</h1>
@@ -33,7 +35,27 @@ const ProfilePage = () => {
         <div className="top-profile-heading">
         <h3>Profile Details</h3>
         </div>
-        <ul>
+        <ol>
+        <li>
+            <label htmlFor="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"/>
+          </li>
+          <li>
+         <label htmlFor="nationality">Nationality:</label>
+         <select id="nationality">
+           <option value="USA">USA</option>
+           <option value="Canada">Canada</option>
+           {/* Add more options as needed */}
+         </select>
+       </li>
+<       li>
+         <label htmlFor="work-visa">Work Visa:</label>
+         <select id="work-visa">
+           <option value="H1B">H1B</option>
+           <option value="L1">L1</option>
+           {/* Add more options as needed */}
+         </select>
+       </li>
           <li>
             <label htmlFor="nationality">Nationality:</label>
             <select id="nationality">
@@ -50,76 +72,7 @@ const ProfilePage = () => {
               {/* Add more options as needed */}
             </select>
           </li>
-          <li>
-            <label htmlFor="nationality">Nationality:</label>
-            <select id="nationality">
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="work-visa">Work Visa:</label>
-            <select id="work-visa">
-              <option value="H1B">H1B</option>
-              <option value="L1">L1</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="nationality">Nationality:</label>
-            <select id="nationality">
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="work-visa">Work Visa:</label>
-            <select id="work-visa">
-              <option value="H1B">H1B</option>
-              <option value="L1">L1</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="nationality">Nationality:</label>
-            <select id="nationality">
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="work-visa">Work Visa:</label>
-            <select id="work-visa">
-              <option value="H1B">H1B</option>
-              <option value="L1">L1</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="nationality">Nationality:</label>
-            <select id="nationality">
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="work-visa">Work Visa:</label>
-            <select id="work-visa">
-              <option value="H1B">H1B</option>
-              <option value="L1">L1</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="dob">Date of Birth:</label>
-            <input type="date" id="dob" />
-          </li>
-          {/* Add more details as needed */}
-        </ul>
+          </ol>
       </div>
       <div className="contact-details">
         <div className="top-profile-heading">
@@ -130,7 +83,6 @@ const ProfilePage = () => {
         {/* Add more contact details as needed */}
       </div>
     </div>
-    <div><button className="back-to-home" onClick={handleBackToHome}>Back to Home</button></div>
     <div className="body-of-CV">
           <div>
             <ProfileForm />
@@ -139,8 +91,8 @@ const ProfilePage = () => {
     </div>
     </div>
   );
-};
 
+      };
 export default ProfilePage;
 
 
