@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import './profile.css';
 import ProfileForm from './ProfileForm';
 import MediaUpload from './MediaUpload';
+import Footer from './Footer';
 
 const ProfilePage = () => {
   const navigate = useNavigate();
@@ -87,6 +88,7 @@ const ProfilePage = () => {
           <div>
             <ProfileForm />
             <MediaUpload />
+            <Footer />
           </div>
     </div>
     </div>
