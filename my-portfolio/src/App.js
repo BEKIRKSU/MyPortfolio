@@ -14,7 +14,6 @@ function App() {
         <Route path="/navbar" element={<Navbar />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>
   );
