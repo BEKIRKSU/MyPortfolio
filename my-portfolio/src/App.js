@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Profile from './Profile';
 import SignUp from './Sign-up'; 
-import Footer from './Footer';
+
 
 function App() {
   return (
