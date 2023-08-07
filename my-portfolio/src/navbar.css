@@ -1,12 +1,9 @@
 nav {
-    background-color: #002147; 
-    /* Oxford blue ^ */
-    /* background-color: #002244; */
-    /* background-color: #002244; */
+    /* Nav can be blue or white. Maybe grey. */
+    /* background-color: #002147;  Oxford Blue*/
     /* background-color: #13274F; */
     /* background-color: #0a2351; */
     /* background-color: #002244; */
-    /* background-color: #002D62; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,14 +21,14 @@ nav {
 }
 
 .name-surname {
-    color: #fff;
+    color: #002147;
     text-align: center;
     margin: 0 auto; 
     font-family: Source Sans Pro,sans-serif;
 }
 
 img {
-    width: 50px; 
+    width: 100px; 
     height: auto; 
 }
 
