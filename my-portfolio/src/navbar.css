@@ -15,18 +15,17 @@ nav {
     background-color: #0d0c41;
     display: flex;
     align-items: center;
-    flex: 1; /* Allow name-area to take available space */
+    flex: 1; 
 }
 
 .name-surname {
     color: #fff;
     text-align: center;
-    margin: 0 auto; /* Center the name-surname */
+    margin: 0 auto; 
 }
 
 .logo {
     color: #fff;
-    margin-left: 0 auto;
 }
 
 .sign-out {
