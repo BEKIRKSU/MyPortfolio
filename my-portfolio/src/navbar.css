@@ -1,7 +1,7 @@
 nav {
     background-color: #0d0c41;
     display: flex;
-    font-weight: 600;
+    align-items: center;
     justify-content: flex-end;
     width: auto; 
     height: 100px;
@@ -11,29 +11,24 @@ nav {
 }
 .name-area {
 	background-color: #0d0c41;
-	min-height: 95px;
-	width: 100%;
+    display: flex;
+    align-items: center; 
+    padding-left: 20px;
 }
 
 .name-surname {
 	color: #fff;
-	padding-top: 30px;
+	/* padding-top: 30px;
 	padding-left: 20px;
-    text-align: center;
+    text-align: center; */
 }
 
 .watermark {
-    position: relative; 
     color: #fff;
     margin-right: auto;
-    top: -45px; 
 }
 
 .sign-out {
-    position: absolute;
-    top:50%;
-    right: 10px;
-    transform: translateY(-50%);
 	padding: 5px 10px;
     font-family: 'Signika', sans-serif;
 	font-size: 15px;
