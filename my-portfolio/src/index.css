@@ -1,6 +1,8 @@
+body {
+  margin: 0; /* Remove default body margin */
+}
 
 .profile-modal {
-  /* position: absolute; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -45,7 +47,7 @@
 .make-my-portfolio-button {
   margin: 0 auto;
   height: 50px;
-  
+
 }.App-logo {
   height: 40vmin;
   pointer-events: none;
