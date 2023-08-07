@@ -5,7 +5,7 @@ const Navbar = ({ onBackToHome }) => {
   return (
     <nav>
       <div className="name-area">
-      <h1 className="logo">LOGO</h1>
+      <img src="https://img.freepik.com/premium-vector/bk-logo_590037-244.jpg?w=2000" alt="Logo" />
         <h2 className="name-surname">NAME SURNAME</h2>
       </div>
       <button className="sign-out" onClick={onBackToHome}>
