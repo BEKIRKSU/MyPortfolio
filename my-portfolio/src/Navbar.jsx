@@ -4,9 +4,13 @@ import './navbar.css';
 const Navbar = ({ onBackToHome }) => {
   return (
     <nav>
+      <div className="name-area">
+        <h2 className="name-surname">NAME SURNAME</h2>
+        <h1 className="watermark">V/U</h1>
       <button className="sign-out" onClick={onBackToHome}>
         Sign out
       </button>
+      </div>
     </nav>
   );
 };
