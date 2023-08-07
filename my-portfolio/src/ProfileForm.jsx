@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ProfileForm.css';
 
 const ProfileForm = () => {
   const [selectedTab, setSelectedTab] = useState(null);
@@ -8,7 +9,7 @@ const ProfileForm = () => {
   };
 
   return (
-    <div>
+    <div className='profile-form'>
       <div style={{ display: 'flex', justifyContent: 'space-around' }}>
         <div
           onClick={() => handleTabClick('education')}
