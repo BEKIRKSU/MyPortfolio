@@ -1,4 +1,4 @@
-nav {
+/* nav {
     background-color: #0d0c41;
     display: flex;
     align-items: center;
@@ -41,4 +41,48 @@ nav {
 	cursor: pointer;
     width: 70px;
     height: 40px;
+} */
+
+nav {
+    background-color: #0d0c41;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Take up the full width of the page */
+    height: 100px;
+    margin: 0; /* Remove margins from all sides */
+    border: none; /* Remove borders */
+    padding: 0 20px;
+}
+
+.name-area {
+    background-color: #0d0c41;
+    display: flex;
+    align-items: center;
+    flex: 1; 
+}
+
+.name-surname {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.logo {
+    color: #fff;
+}
+
+.sign-out {
+    padding: 5px 10px;
+    font-family: 'Signika', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #eeeeee;
+    color: rgb(44, 26, 117);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    margin-right: 25px;
 }
