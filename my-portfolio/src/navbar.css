@@ -2,28 +2,30 @@ nav {
     background-color: #0d0c41;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: auto; 
+    justify-content: space-between;
+    width: auto;
     height: 100px;
-	margin-bottom: 10px;
-	border-style: double;
-	border-width: 5px;
+    margin-bottom: 10px;
+    border-style: double;
+    border-width: 5px;
+    padding: 0 20px;
 }
+
 .name-area {
-	background-color: #0d0c41;
+    background-color: #0d0c41;
     display: flex;
-    align-items: center; 
-    padding-left: 20px;
+    align-items: center;
+    flex: 1; /* Allow name-area to take available space */
 }
 
 .name-surname {
-	color: #fff;
-	/* padding-top: 30px;
-	padding-left: 20px;
-    text-align: center; */
+    color: #fff;
+    text-align: center;
+    margin: 0 auto; /* Center the name-surname */
 }
 
-.watermark {
+.logo {
+    position: relative;
     color: #fff;
     margin-right: auto;
 }
