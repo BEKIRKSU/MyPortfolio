@@ -1,5 +1,12 @@
 nav {
-    background-color: #7CB9E8;
+    background-color: #002147; 
+    /* Oxford blue ^ */
+    /* background-color: #002244; */
+    /* background-color: #002244; */
+    /* background-color: #13274F; */
+    /* background-color: #0a2351; */
+    /* background-color: #002244; */
+    /* background-color: #002D62; */
     display: flex;
     align-items: center;
     justify-content: space-between;
