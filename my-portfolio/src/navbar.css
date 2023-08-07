@@ -33,7 +33,7 @@ img {
 
 .sign-out {
     padding: 5px 10px;
-    font-family: Source Sans Pro,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     font-weight: bold;
     background-color: #eeeeee;
@@ -44,8 +44,13 @@ img {
     width: 70px;
     height: 40px;
     margin-right: 25px;
+    transition: background-color 0.3s ease;
 }
 
+.sign-out:hover {
+    background-color: #d6354d; 
+    color: white; 
+}
 /* nav {
     background-color: #0d0c41;
     display: flex;
