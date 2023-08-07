@@ -4,7 +4,26 @@ nav {
     font-weight: 600;
     justify-content: flex-end;
     width: 100%; 
-    height: 70px;
+    height: 100px;
+}
+.name-area {
+	background-color: #0d0c41;
+	min-height: 95px;
+	width: 100%;
+}
+
+.name-surname {
+	color: #fff;
+	padding-top: 30px;
+	padding-left: 20px;
+    text-align: center;
+}
+
+.watermark {
+    position: relative; 
+    color: #fff;
+    margin-right: auto;
+    top: -45px; 
 }
 
 .sign-out {
