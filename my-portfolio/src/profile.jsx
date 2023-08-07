@@ -6,11 +6,22 @@ import ProfileForm from './ProfileForm';
 import MediaUpload from './MediaUpload';
 import Footer from './Footer';
 
+
 const ProfilePage = () => {
   const navigate = useNavigate();
 
   const handleBackToHome = () => {
     navigate('/');
+  };
+
+  const handleEditProfile = () => {
+    // Define the logic for editing profile details
+    // For example, navigate to an edit page or show a form/modal
+  };
+
+  const handleEditContact = () => {
+    // Define the logic for editing contact details
+    // For example, navigate to an edit page or show a form/modal
   };
 
   return (
@@ -36,7 +47,10 @@ const ProfilePage = () => {
       </div>
       <div className="details-container">
         <div className="top-profile-heading">
-        <h3>Profile Details</h3>
+          <h3>Profile Details</h3>
+          <button className="edit-button" onClick={handleEditProfile}>
+            Edit
+          </button>
         </div>
         <ol>
         <li>
@@ -76,10 +90,13 @@ const ProfilePage = () => {
             </select>
           </li>
           </ol>
-      </div>
+          </div>
       <div className="contact-details">
         <div className="top-profile-heading">
-        <h3>Contact Details</h3>
+          <h3>Contact Details</h3>
+          <button className="edit-button" onClick={handleEditContact}>
+            Edit
+          </button>
         </div>
         <p>Email: example@example.com</p>
         <p>Phone: +1 (123) 456-7890</p>
