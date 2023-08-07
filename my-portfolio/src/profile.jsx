@@ -26,7 +26,7 @@ const ProfilePage = () => {
 
   return (
     <div>
-      <div className='navbar-div'>
+      <div>
       <Navbar onBackToHome={handleBackToHome}/>
       </div>
     <div className="profile-container">
