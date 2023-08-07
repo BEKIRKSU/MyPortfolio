@@ -1,14 +1,3 @@
-.name-area {
-	background-color: #0d0c41;
-	min-height: 95px;
-	width: 100%;
-}
-
-.name-surname {
-	color: #fff;
-	padding-top: 30px;
-	padding-left: 20px;
-}
 
 /* button {
 	margin-top: 0px;
@@ -22,12 +11,12 @@
 	margin: 0px 0px 0px 1300px;
   } */
 
-.watermark {
-    position: relative; 
-    color: #fff;
-    margin-left: 1300px;
-    top: -45px; 
-}
+  .navbar-div {
+	height: auto;
+	margin-bottom: 10px;
+	border-style: double;
+  }
+
 .profile-container {
 	align-items: centre;
     border-bottom: 1px solid #dadada;
