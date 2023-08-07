@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom'; // Make sure to import useNavigate
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
+  const handleBackToHome = () => {
+    navigate('/');
+  };
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -26,7 +33,7 @@ const SignUp = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar onBackToHome={handleBackToHome} />
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <div>
