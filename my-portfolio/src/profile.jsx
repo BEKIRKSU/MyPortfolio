@@ -26,13 +26,9 @@ const ProfilePage = () => {
 
   return (
     <div>
-      <div>
+      <div className='navbar-div'>
       <Navbar onBackToHome={handleBackToHome}/>
       </div>
-    <div className="name-area">
-        <h2 className="name-surname">NAME SURNAME</h2>
-        <h1 className="watermark">V/U</h1>
-    </div>
     <div className="profile-container">
      <div
         className="profile-photo"
