@@ -66,15 +66,17 @@ nav {
     color: #fff;
     text-align: center;
     margin: 0 auto; 
+    font-family: Source Sans Pro,sans-serif;
 }
 
 .logo {
     color: #fff;
+    font-family: Source Sans Pro,sans-serif;
 }
 
 .sign-out {
     padding: 5px 10px;
-    font-family: 'Signika', sans-serif;
+    font-family: Source Sans Pro,sans-serif;
     font-size: 15px;
     font-weight: bold;
     background-color: #eeeeee;
