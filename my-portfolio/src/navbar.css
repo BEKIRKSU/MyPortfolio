@@ -25,9 +25,8 @@ nav {
 }
 
 .logo {
-    position: relative;
     color: #fff;
-    margin-right: auto;
+    margin-left: 0 auto;
 }
 
 .sign-out {
@@ -43,7 +42,3 @@ nav {
     width: 70px;
     height: 40px;
 }
-
-/* nav, .sign-out {
-    margin: 0 !important;
-} */
