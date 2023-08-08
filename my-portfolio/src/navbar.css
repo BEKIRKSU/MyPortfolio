@@ -1,6 +1,6 @@
 nav {
     /* Nav can be blue or white. Maybe grey. */
-    /* background-color: #002147;  Oxford Blue*/
+    background-color: #002147;  
     /* background-color: #13274F; */
     /* background-color: #0a2351; */
     /* background-color: #002244; */
@@ -21,7 +21,7 @@ nav {
 }
 
 .name-surname {
-    color: #002147;
+    color: white;
     text-align: center;
     margin: 0 auto; 
     font-family: Source Sans Pro,sans-serif;
