@@ -58,7 +58,13 @@ const ProfileForm = () => {
           {/* Add more input boxes as needed */}
         </div>
       )}
-      {/* You can add similar code for 'hobbies' as well */}
+      {selectedTab === 'hobbies' && (
+        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+          <input type="text" placeholder="Hobby name" />
+          <input type="text" placeholder="Description" />
+          {/* Add more input boxes as needed */}
+        </div>
+      )}
     </div>
   );
 };
