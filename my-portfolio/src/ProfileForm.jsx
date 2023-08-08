@@ -24,6 +24,12 @@ const ProfileForm = () => {
           Experience
         </div>
         <div
+          onClick={() => handleTabClick('skills')}
+          style={{ cursor: 'pointer', padding: '10px', border: selectedTab === 'skills' ? '2px solid blue' : '1px solid black' }}
+        >
+          Skills
+        </div>
+        <div
           onClick={() => handleTabClick('hobbies')}
           style={{ cursor: 'pointer', padding: '10px', border: selectedTab === 'hobbies' ? '2px solid blue' : '1px solid black' }}
         >
@@ -42,6 +48,13 @@ const ProfileForm = () => {
           <input type="text" placeholder="Experience name" />
           <input type="text" placeholder="Year of experience" />
           <input type="text" placeholder="Duration" />
+          {/* Add more input boxes as needed */}
+        </div>
+      )}
+      {selectedTab === 'skills' && (
+        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+          <input type="text" placeholder="Skill name" />
+          <input type="text" placeholder="Years of experience" />
           {/* Add more input boxes as needed */}
         </div>
       )}
