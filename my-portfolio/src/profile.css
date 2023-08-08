@@ -6,6 +6,7 @@
 	background-color: #eeeeee;
 	margin-bottom: 20px;
 	width: 100%;
+	margin: 0; 
 	/* border-bottom: 4px solid #0d0c41; */
 	padding: 10px;
   }
@@ -13,7 +14,7 @@
   .profile-photo {
 	width: 220px;
 	height: 300px;
-	border-radius: 10%;
+	/* border-radius: 10%; */
 	overflow: hidden;
 	margin-left: 30px;
 	/* Add styles for the photo container, e.g., border, box-shadow, etc. */
