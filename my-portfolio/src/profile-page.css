@@ -44,6 +44,7 @@
 	color: blue;
 	cursor: pointer;
 	font-size: 14px;
+	font-weight: bold;
   }
 
   li {
@@ -60,7 +61,7 @@
 	display: flex;
 	align-items: center;
 		margin-bottom: 10px; /* Adjust the value as needed */
-font-weight: bold;
+font-weight: 500;
 font-size: 13px;
 font-family: Source Sans Pro,sans-serif;
   }
