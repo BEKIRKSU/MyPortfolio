@@ -50,9 +50,13 @@ const ProfilePage = () => {
         </div>
         <ol>
         <li>
-            <label htmlFor="full-name">Full Name:</label>
-            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"/>
-          </li>
+  <label htmlFor="full-name">Full Name:</label>
+  <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"/>
+</li>
+<li>
+  <label htmlFor="location">Location:</label>
+  <input type="text" id="location" name="location" placeholder="Enter your location"/>
+</li>
           <li>
          <label htmlFor="nationality">Nationality:</label>
          <select id="nationality">
@@ -61,30 +65,26 @@ const ProfilePage = () => {
            {/* Add more options as needed */}
          </select>
        </li>
-<       li>
-         <label htmlFor="work-visa">Work Visa:</label>
-         <select id="work-visa">
-           <option value="H1B">H1B</option>
-           <option value="L1">L1</option>
-           {/* Add more options as needed */}
-         </select>
-       </li>
-          <li>
-            <label htmlFor="nationality">Nationality:</label>
-            <select id="nationality">
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
-          <li>
-            <label htmlFor="work-visa">Work Visa:</label>
-            <select id="work-visa">
-              <option value="H1B">H1B</option>
-              <option value="L1">L1</option>
-              {/* Add more options as needed */}
-            </select>
-          </li>
+       <li>
+  <label htmlFor="work-visa">Do you have a valid work visa for the UK?</label>
+  <select id="work-visa">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</li>
+<li>
+  <label htmlFor="authorized-uk">Are you legally authorized to work in the UK?</label>
+  <select id="authorized-uk">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</li><li>
+  <label htmlFor="relocate">Are you willing to relocate if necessary?</label>
+  <select id="relocate">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</li>
           </ol>
           </div>
       <div className="contact-details">
