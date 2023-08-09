@@ -40,7 +40,7 @@ const ProfileForm = () => {
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <input type="text" placeholder="Level of education" />
           <input type="text" placeholder="Year of graduation" />
-          {/* Add more input boxes as needed */}
+         
         </div>
       )}
       {selectedTab === 'experience' && (
@@ -48,21 +48,21 @@ const ProfileForm = () => {
           <input type="text" placeholder="Experience name" />
           <input type="text" placeholder="Year of experience" />
           <input type="text" placeholder="Duration" />
-          {/* Add more input boxes as needed */}
+          
         </div>
       )}
       {selectedTab === 'skills' && (
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <input type="text" placeholder="Skill name" />
           <input type="text" placeholder="Years of experience" />
-          {/* Add more input boxes as needed */}
+        
         </div>
       )}
       {selectedTab === 'hobbies' && (
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <input type="text" placeholder="Hobby name" />
           <input type="text" placeholder="Description" />
-          {/* Add more input boxes as needed */}
+  
         </div>
       )}
     </div>
