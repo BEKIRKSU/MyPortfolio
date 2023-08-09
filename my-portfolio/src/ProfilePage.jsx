@@ -138,6 +138,17 @@ const ProfilePage = () => {
     autoComplete="off"
   />
 </li>
+<li>
+    <label>Connect with me:</label>
+    <div className="social-icons">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <img className="website-link" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=2147483647&v=beta&t=Zq1zixRFUNMSm2Ldgu_hcJAYTL1gWG3VHKXO4kf9lDQ" alt="LinkedIn" />
+      </a>
+      <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
+        <img className="website-link" src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub" />
+      </a>
+    </div>
+  </li>
         </ol>
       </div>
     </div>
