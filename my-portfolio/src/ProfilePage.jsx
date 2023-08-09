@@ -145,7 +145,7 @@ const ProfilePage = () => {
         <img className="website-link" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=2147483647&v=beta&t=Zq1zixRFUNMSm2Ldgu_hcJAYTL1gWG3VHKXO4kf9lDQ" alt="LinkedIn" />
       </a>
       <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
-        <img className="website-link" src="https://foundations.projectpythia.org/_images/GitHub-logo.png" alt="GitHub" />
+        <img className="website-link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub" />
       </a>
     </div>
   </li>
