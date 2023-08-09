@@ -22,6 +22,7 @@
 
   .top-profile-heading {
 	align-items: centre;
+	font-size: 14px;
     border-bottom: 1px solid #dadada;
     display: flex;
     justify-content: space-between;
