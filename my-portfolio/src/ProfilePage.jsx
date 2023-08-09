@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import './profile-page.css';
+import CountryList from './CountryList';
 import ProfileForm from './ProfileForm';
 import MediaUpload from './MediaUpload';
 import Footer from './Footer';
@@ -79,14 +80,7 @@ const ProfilePage = () => {
     autoComplete="off" 
   />
 </li>
-          <li>
-         <label htmlFor="nationality">Nationality:</label>
-         <select id="nationality">
-           <option value="USA">USA</option>
-           <option value="Canada">Canada</option>
-           {/* Add more options as needed */}
-         </select>
-       </li>
+          <CountryList />
        <li>
   <label htmlFor="work-visa">Do you have a valid work visa for the UK?</label>
   <select id="work-visa">
