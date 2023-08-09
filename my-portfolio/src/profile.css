@@ -24,6 +24,7 @@
 	align-items: centre;
     border-bottom: 1px solid #dadada;
     display: flex;
+	font-size: 13px ;
     justify-content: space-between;
 	max-width: 500px;
 	min-width: 500px;
