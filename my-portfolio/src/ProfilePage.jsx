@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import './profile-page.css';
@@ -13,6 +13,22 @@ const ProfilePage = () => {
   const handleBackToHome = () => {
     navigate('/');
   };
+
+  useEffect(() => {
+    const locationInput = document.getElementById('location');
+  
+    if (locationInput) {
+      const autocomplete = new window.google.maps.places.Autocomplete(locationInput);
+  
+      // Listen for place_changed event to get selected location
+      autocomplete.addListener('place_changed', () => {
+        const place = autocomplete.getPlace();
+        if (place && place.formatted_address) {
+          console.log('Selected location:', place.formatted_address);
+        }
+      });
+    }
+  }, []);
 
   const handleEditProfile = () => {
     // Define the logic for editing profile details
@@ -55,7 +71,13 @@ const ProfilePage = () => {
 </li>
 <li>
   <label htmlFor="location">Location:</label>
-  <input type="text" id="location" name="location" placeholder="Enter your location"/>
+  <input
+    type="text"
+    id="location"
+    name="location"
+    placeholder="Enter your location"
+    autoComplete="off" 
+  />
 </li>
           <li>
          <label htmlFor="nationality">Nationality:</label>
