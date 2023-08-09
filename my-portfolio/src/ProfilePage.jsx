@@ -116,9 +116,29 @@ const ProfilePage = () => {
             Edit
           </button>
         </div>
-        <p>Email: example@example.com</p>
-        <p>Phone: +1 (123) 456-7890</p>
-        {/* Add more contact details as needed */}
+        <ol>
+        <li>
+  <label htmlFor="email">Email:</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Enter your email address"
+    autoComplete="off"
+  />
+</li>
+<li>
+  <label htmlFor="phone">Phone Number:</label>
+  <input
+    type="tel"
+    id="phone"
+    name="phone"
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" // Add a pattern for phone number format
+    placeholder="Enter your phone number"
+    autoComplete="off"
+  />
+</li>
+        </ol>
       </div>
     </div>
     <div className="body-of-CV">
