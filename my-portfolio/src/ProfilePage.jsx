@@ -59,7 +59,7 @@ const ProfilePage = () => {
       </div>
       <div className="details-container">
         <div className="top-profile-heading">
-          <h3>Profile Details</h3>
+          <h4>Profile Details</h4>
           <button className="edit-button" onClick={handleEditProfile}>
             Edit
           </button>
@@ -111,7 +111,7 @@ const ProfilePage = () => {
           </div>
       <div className="contact-details">
         <div className="top-profile-heading">
-          <h3>Contact Details / Other Sites</h3>
+          <h4>Contact Details / Other Sites</h4>
           <button className="edit-button" onClick={handleEditContact}>
             Edit
           </button>
