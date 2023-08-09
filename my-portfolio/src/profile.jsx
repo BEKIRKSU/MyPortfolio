@@ -89,7 +89,7 @@ const ProfilePage = () => {
           </div>
       <div className="contact-details">
         <div className="top-profile-heading">
-          <h3>Contact Details / Other Websites</h3>
+          <h3>Contact Details</h3>
           <button className="edit-button" onClick={handleEditContact}>
             Edit
           </button>
