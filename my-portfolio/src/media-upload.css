@@ -1,13 +1,17 @@
 .media-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .media-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #eeeeee; 
+  padding: 20px; 
+}
+
+.media-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0; 
+  background-color: #ffffff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
