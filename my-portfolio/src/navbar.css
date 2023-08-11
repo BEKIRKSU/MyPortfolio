@@ -50,7 +50,8 @@ img {
 }
 
 .sign-out:hover {
-    background-color: #E32636; 
+    background-color: #c42f2f; 
+   /* E32636 */
     color: white; 
 }
 /* nav {
