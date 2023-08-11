@@ -1,11 +1,12 @@
 import React from 'react';
+import './footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer>
-      <p>© {currentYear} Your Company. All rights reserved.</p>
+      <p>© {currentYear} BK. All rights reserved.</p>
     </footer>
   );
 };
