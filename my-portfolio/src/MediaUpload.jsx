@@ -31,7 +31,7 @@ const MediaUpload = () => {
   };
 
   return (
-    <div>
+    <div className="media-container">
       <h2>Media</h2>
       <button onClick={toggleExpand}>{isExpanded ? 'Collapse' : 'Expand'}</button>
       {isExpanded && (
