@@ -1,76 +1,75 @@
-
-
 .profile-container {
-    display: flex;
-    justify-content: space-between;
-	background-color: #eeeeee;
-	margin-bottom: 20px;
-	width: 100%;
-	margin-bottom: 10px;
-	padding: 10px;
-  }
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 300px;
+  border-radius: 5%;
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+.top-profile-heading {
+  align-items: centre;
+  font-size: 14px;
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  min-width: 500px;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 100px;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+li {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  line-height: 17.6px;
+  margin: 0;
+  padding-top: 4px;
+  transition: .3s;
+}
+
+label {
+  margin-bottom: 10px;
+  /* Adjust the value as needed */
+  font-weight: 500;
+  font-size: 13px;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.website-link {
+  width: 40px;
+}
+
+.profile-details,
+.contact-details {
+  flex: 1;
+}
+
+.body-of-CV {
   
-  .profile-photo {
-	width: 220px;
-	height: 300px;
-	border-radius: 5%;
-	overflow: hidden;
-	margin-left: 30px;
-  }
-
-  .top-profile-heading {
-	align-items: centre;
-	font-size: 14px;
-    border-bottom: 1px solid #dadada;
-    display: flex;
-    justify-content: space-between;
-	max-width: 500px;
-	min-width: 500px;
-	font-family: Source Sans Pro,sans-serif;
-  }
-  
-  .details-container {
-	display: flex;
-	flex-direction: column; 
-	padding-left: 25px;
-	padding-right: 100px;
-  }
-
-  .edit-button {
-	background: none;
-	border: none;
-	color: blue;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: bold;
-  }
-
-  li {
-	display: flex;
-    height: auto;
-    justify-content: space-between;
-    line-height: 17.6px;
-    margin: 0;
-    padding-top: 4px;
-    transition: .3s;
-  }
-
-  label {
-		margin-bottom: 10px; /* Adjust the value as needed */
-font-weight: 500;
-font-size: 13px;
-font-family: Source Sans Pro,sans-serif;
-  }
-
-  .website-link {
-	width: 40px;
-  }
-  
-  .profile-details,
-  .contact-details {
-	flex: 1;
-  }
-  
-  .body-of-CV {
-	padding-left: 25px;
-  }
+}
