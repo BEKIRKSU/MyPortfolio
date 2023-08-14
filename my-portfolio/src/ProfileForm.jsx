@@ -36,17 +36,30 @@ const ProfileForm = () => {
           Hobbies
         </div>
       </div>
+      {selectedTab === 'experience' && (
+    <div className="profile-form-content">
+      <div className="experience-inputs">
+        <input type="text" placeholder="Experience Title" />
+        <input type="text" placeholder="Year of Experience" />
+        <div className="duration-select">
+          <select>
+            <option value="" disabled selected hidden>Duration</option>
+            <option value="0-6 months">0-6 months</option>
+            <option value="6-12 months">6-12 months</option>
+            <option value="1-2 years">1-2 years</option>
+            <option value="2-4 years">2-4 years</option>
+            <option value="5-10 years">5-10 years</option>
+            <option value="10 years+">10 years+</option>
+          </select>
+        </div>
+        <input type="text" placeholder='Details' />
+      </div>
+    </div>
+  )}
       {selectedTab === 'education' && (
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <input type="text" placeholder="Level of education" />
           <input type="text" placeholder="Year of graduation" />
-        </div>
-      )}
-      {selectedTab === 'experience' && (
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <input type="text" placeholder="Experience name" />
-          <input type="text" placeholder="Year of experience" />
-          <input type="text" placeholder="Duration" />
         </div>
       )}
       {selectedTab === 'skills' && (
