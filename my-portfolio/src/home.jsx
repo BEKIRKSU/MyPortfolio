@@ -15,9 +15,6 @@ const HomePage = () => {
         <button class="make-my-portfolio-button">Make my digital portfolio</button>
         </Link>
       </header>
-    {/* <div>
-      <Footer />
-      </div> */}
     </div>
   );
 };
