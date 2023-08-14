@@ -120,7 +120,7 @@ const ProfilePage = () => {
     type="email"
     id="email"
     name="email"
-    placeholder="Enter your email address"
+    placeholder="Enter email"
     autoComplete="off"
   />
 </li>
@@ -131,7 +131,7 @@ const ProfilePage = () => {
     id="phone"
     name="phone"
     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" // Add a pattern for phone number format
-    placeholder="Enter your phone number"
+    placeholder="Enter phone number"
     autoComplete="off"
   />
 </li>
