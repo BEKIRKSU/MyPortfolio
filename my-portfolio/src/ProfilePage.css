@@ -49,6 +49,7 @@ li {
   justify-content: space-between;
   line-height: 17.6px;
   margin: 0;
+  margin-top: 10px;
   padding-top: 4px;
   transition: .3s;
 }
