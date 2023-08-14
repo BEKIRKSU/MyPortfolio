@@ -153,7 +153,7 @@ const ProfilePage = () => {
           <div>
             <ProfileForm />
             <MediaUpload />
-            <Footer />
+            {/* <Footer /> */}
           </div>
     </div>
     </div>
