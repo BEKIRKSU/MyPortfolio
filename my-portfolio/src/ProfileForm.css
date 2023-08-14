@@ -44,3 +44,25 @@
     outline: none;
     border-color: #007bff;
   }
+
+  .profile-form-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .experience-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .experience-inputs input[type="text"],
+  .duration-select select {
+    /* ... existing styles ... */
+    width: calc(33.33% - 10px); /* Divide available space into three equal parts */
+    margin-right: 10px; /* Add spacing between inputs */
+  }
+  
+  .duration-select select {
+    width: 100%;
+  }
