@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import ProfilePage from './ProfilePage';
 import SignUp from './Sign-up'; 
+import Footer from './Footer';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           </Routes>
         </main>
         <footer>
-          {/*  Footer content */}
+          <Footer />
           </footer>
           </div>
     </Router> 
