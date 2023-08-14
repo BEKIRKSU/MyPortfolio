@@ -56,7 +56,6 @@ const ProfilePage = () => {
           backgroundPosition: 'center',
         }}
       >
-        {/* Add your profile photo here */}
       </div>
       <div className="details-container">
         <div className="top-profile-heading">
