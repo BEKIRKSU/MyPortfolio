@@ -65,13 +65,13 @@ const ProfileForm = () => {
       {selectedTab === 'skills' && (
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <input type="text" placeholder="Skill name" />
-          <input type="text" placeholder="Years of experience" />
+          <input type="text" placeholder="Details" />
         </div>
       )}
       {selectedTab === 'hobbies' && (
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <input type="text" placeholder="Hobby name" />
-          <input type="text" placeholder="Description" />
+          <input type="text" placeholder="Details" />
         </div>
       )}
     </div>
