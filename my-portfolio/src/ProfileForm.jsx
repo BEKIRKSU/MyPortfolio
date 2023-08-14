@@ -60,6 +60,7 @@ const ProfileForm = () => {
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <input type="text" placeholder="Level of education" />
           <input type="text" placeholder="Year of graduation" />
+          <input type="text" placeholder='Details' />
         </div>
       )}
       {selectedTab === 'skills' && (
