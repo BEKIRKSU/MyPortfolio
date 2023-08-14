@@ -24,6 +24,8 @@ function App() {
         </main>
         <footer>
           {/*  Footer content */}
+          </footer>
+          </div>
     </Router> 
   );
 }
@@ -33,25 +35,7 @@ export default App;
 
 
         
-      
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/navbar" element={<Navbar />} />
-            <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/sign-up" element={<SignUp />} />
-          </Routes>
-        </main>
-        
-        <footer>
-          {/* Your footer content */}
-          <p>Footer</p>
-        </footer>
-      </div>
-    </Router>
-  );
-}
-
-export default App;
+  
 
 
   
