@@ -4,10 +4,31 @@ import './ProfileForm.css';
 const ProfileForm = () => {
   const [selectedTab, setSelectedTab] = useState(null);
 
+  const [experienceData, setExperienceData] = useState([{ title: '', year: '', duration: '', details: '' }]);
+  const [educationData, setEducationData] = useState([{ level: '', year: '', details: '' }]);
+  const [skillsData, setSkillsData] = useState([{ skillName: '', details: '' }]);
+  const [hobbiesData, setHobbiesData] = useState([{ hobbyName: '', details: '' }]);
+
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
   };
 
+  const handleAddExperience = () => {
+    setExperienceData([...experienceData, { title: '', year: '', duration: '', details: '' }]);
+  };
+
+  const handleAddEducation = () => {
+    setEducationData([...educationData, { level: '', year: '', details: '' }]);
+  };
+
+  const handleAddSkill = () => {
+    setSkillsData([...skillsData, { skillName: '', details: '' }]);
+  };
+
+  const handleAddHobby = () => {
+    setHobbiesData([...hobbiesData, { hobbyName: '', details: '' }]);
+  };
+  
   return (
     <div className='profile-form'>
       <div style={{ display: 'flex', justifyContent: 'space-around' }}>
@@ -37,42 +58,52 @@ const ProfileForm = () => {
         </div>
       </div>
       {selectedTab === 'experience' && (
-    <div className="profile-form-content">
-      <div className="experience-inputs">
-        <input type="text" placeholder="Experience Title" />
-        <input type="text" placeholder="Year of Experience" />
-        <div className="duration-select">
-          <select>
-            <option value="" disabled selected hidden>Duration</option>
-            <option value="0-6 months">0-6 months</option>
-            <option value="6-12 months">6-12 months</option>
-            <option value="1-2 years">1-2 years</option>
-            <option value="2-4 years">2-4 years</option>
-            <option value="5-10 years">5-10 years</option>
-            <option value="10 years+">10 years+</option>
-          </select>
+        <div className="profile-form-content">
+          {experienceData.map((experience, index) => (
+            <div key={index} className="experience-inputs">
+              <input type="text" placeholder="Experience Title" />
+              <input type="text" placeholder="Year of Experience" />
+              <div className="duration-select">
+                {/* ... */}
+              </div>
+              <input type="text" placeholder='Details' />
+            </div>
+          ))}
+          <button onClick={handleAddExperience}>Add</button>
         </div>
-        <input type="text" placeholder='Details' />
-      </div>
-    </div>
-  )}
+      )}
       {selectedTab === 'education' && (
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <input type="text" placeholder="Level of education" />
-          <input type="text" placeholder="Year of graduation" />
-          <input type="text" placeholder='Details' />
+        <div className="profile-form-content">
+          {educationData.map((education, index) => (
+            <div key={index} className="education-inputs">
+              <input type="text" placeholder="Level of education" />
+              <input type="text" placeholder="Year of graduation" />
+              <input type="text" placeholder='Details' />
+            </div>
+          ))}
+          <button onClick={handleAddEducation}>Add</button>
         </div>
       )}
       {selectedTab === 'skills' && (
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <input type="text" placeholder="Skill name" />
-          <input type="text" placeholder="Details" />
+        <div className="profile-form-content">
+          {skillsData.map((skill, index) => (
+            <div key={index} className="skills-inputs">
+              <input type="text" placeholder="Skill name" />
+              <input type="text" placeholder="Details" />
+            </div>
+          ))}
+          <button onClick={handleAddSkill}>Add</button>
         </div>
       )}
       {selectedTab === 'hobbies' && (
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <input type="text" placeholder="Hobby name" />
-          <input type="text" placeholder="Details" />
+        <div className="profile-form-content">
+          {hobbiesData.map((hobby, index) => (
+            <div key={index} className="hobbies-inputs">
+              <input type="text" placeholder="Hobby name" />
+              <input type="text" placeholder="Details" />
+            </div>
+          ))}
+          <button onClick={handleAddHobby}>Add</button>
         </div>
       )}
     </div>
@@ -86,3 +117,14 @@ export default ProfileForm;
 
 
 
+
+
+
+  
+ 
+
+ 
+      // <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+      //   {/* ... similar code for tabs ... */}
+      // </div>
+     
