@@ -17,17 +17,61 @@ const ProfileForm = () => {
     setExperienceData([...experienceData, { title: '', year: '', duration: '', details: '' }]);
   };
 
-  const handleAddEducation = () => {
-    setEducationData([...educationData, { level: '', year: '', details: '' }]);
-  };
-
-  const handleAddSkill = () => {
-    setSkillsData([...skillsData, { skillName: '', details: '' }]);
-  };
-
-  const handleAddHobby = () => {
-    setHobbiesData([...hobbiesData, { hobbyName: '', details: '' }]);
-  };
+  const handleRemoveExperience = (index) => {
+    const updatedData = [...experienceData];
+    updatedData.splice(index, 1);
+    setExperienceData(updatedData);
+  };const ProfileForm = () => {
+    const [selectedTab, setSelectedTab] = useState(null);
+  
+    const [experienceData, setExperienceData] = useState([{ title: '', year: '', duration: '', details: '' }]);
+    const [educationData, setEducationData] = useState([{ level: '', year: '', details: '' }]);
+    const [skillsData, setSkillsData] = useState([{ skillName: '', details: '' }]);
+    const [hobbiesData, setHobbiesData] = useState([{ hobbyName: '', details: '' }]);
+  
+    const handleTabClick = (tab) => {
+      setSelectedTab(tab);
+    };
+  
+    const handleAddExperience = () => {
+      setExperienceData([...experienceData, { title: '', year: '', duration: '', details: '' }]);
+    };
+  
+    const handleRemoveExperience = (index) => {
+      const updatedData = [...experienceData];
+      updatedData.splice(index, 1);
+      setExperienceData(updatedData);
+    };
+  
+    const handleAddEducation = () => {
+      setEducationData([...educationData, { level: '', year: '', details: '' }]);
+    };
+  
+    const handleRemoveEducation = (index) => {
+      const updatedData = [...educationData];
+      updatedData.splice(index, 1);
+      setEducationData(updatedData);
+    };
+  
+    const handleAddSkill = () => {
+      setSkillsData([...skillsData, { skillName: '', details: '' }]);
+    };
+  
+    const handleRemoveSkill = (index) => {
+      const updatedData = [...skillsData];
+      updatedData.splice(index, 1);
+      setSkillsData(updatedData);
+    };
+  
+    const handleAddHobby = () => {
+      setHobbiesData([...hobbiesData, { hobbyName: '', details: '' }]);
+    };
+  
+    const handleRemoveHobby = (index) => {
+      const updatedData = [...hobbiesData];
+      updatedData.splice(index, 1);
+      setHobbiesData(updatedData);
+    };
   
   return (
     <div className='profile-form'>
