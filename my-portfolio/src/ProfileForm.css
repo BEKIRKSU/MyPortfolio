@@ -13,8 +13,8 @@
     border-radius: 10%;
   }
   
-  .tab-button.selected {
-    border: 70px solid blue;
+  .tab-buttons.selected {
+    border: 70px solid rgb(198, 40, 45);
   }
   
   .profile-form > div {
