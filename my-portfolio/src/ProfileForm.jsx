@@ -55,26 +55,26 @@ const ProfileForm = () => {
   
   return (
     <div className='profile-form'>
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <div
+      <div >
+        <div className='tab-buttons'
           onClick={() => handleTabClick('experience')}
           style={{ cursor: 'pointer', padding: '10px', border: selectedTab === 'experience' ? '2px solid blue' : '1px solid black' }}
         >
           Experience
         </div>
-        <div
+        <div className='tab-buttons'
           onClick={() => handleTabClick('education')}
           style={{ cursor: 'pointer', padding: '10px', border: selectedTab === 'education' ? '2px solid blue' : '1px solid black' }}
         >
           Education
         </div>
-        <div
+        <div className='tab-buttons'
           onClick={() => handleTabClick('skills')}
           style={{ cursor: 'pointer', padding: '10px', border: selectedTab === 'skills' ? '2px solid blue' : '1px solid black' }}
         >
           Skills
         </div>
-        <div
+        <div className='tab-buttons'
           onClick={() => handleTabClick('hobbies')}
           style={{ cursor: 'pointer', padding: '10px', border: selectedTab === 'hobbies' ? '2px solid blue' : '1px solid black' }}
         >
