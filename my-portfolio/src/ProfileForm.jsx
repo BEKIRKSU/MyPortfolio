@@ -21,57 +21,37 @@ const ProfileForm = () => {
     const updatedData = [...experienceData];
     updatedData.splice(index, 1);
     setExperienceData(updatedData);
-  };const ProfileForm = () => {
-    const [selectedTab, setSelectedTab] = useState(null);
-  
-    const [experienceData, setExperienceData] = useState([{ title: '', year: '', duration: '', details: '' }]);
-    const [educationData, setEducationData] = useState([{ level: '', year: '', details: '' }]);
-    const [skillsData, setSkillsData] = useState([{ skillName: '', details: '' }]);
-    const [hobbiesData, setHobbiesData] = useState([{ hobbyName: '', details: '' }]);
-  
-    const handleTabClick = (tab) => {
-      setSelectedTab(tab);
-    };
-  
-    const handleAddExperience = () => {
-      setExperienceData([...experienceData, { title: '', year: '', duration: '', details: '' }]);
-    };
-  
-    const handleRemoveExperience = (index) => {
-      const updatedData = [...experienceData];
-      updatedData.splice(index, 1);
-      setExperienceData(updatedData);
-    };
-  
-    const handleAddEducation = () => {
-      setEducationData([...educationData, { level: '', year: '', details: '' }]);
-    };
-  
-    const handleRemoveEducation = (index) => {
-      const updatedData = [...educationData];
-      updatedData.splice(index, 1);
-      setEducationData(updatedData);
-    };
-  
-    const handleAddSkill = () => {
-      setSkillsData([...skillsData, { skillName: '', details: '' }]);
-    };
-  
-    const handleRemoveSkill = (index) => {
-      const updatedData = [...skillsData];
-      updatedData.splice(index, 1);
-      setSkillsData(updatedData);
-    };
-  
-    const handleAddHobby = () => {
-      setHobbiesData([...hobbiesData, { hobbyName: '', details: '' }]);
-    };
-  
-    const handleRemoveHobby = (index) => {
-      const updatedData = [...hobbiesData];
-      updatedData.splice(index, 1);
-      setHobbiesData(updatedData);
-    };
+  };
+
+  const handleAddEducation = () => {
+    setEducationData([...educationData, { level: '', year: '', details: '' }]);
+  };
+
+  const handleRemoveEducation = (index) => {
+    const updatedData = [...educationData];
+    updatedData.splice(index, 1);
+    setEducationData(updatedData);
+  };
+
+  const handleAddSkill = () => {
+    setSkillsData([...skillsData, { skillName: '', details: '' }]);
+  };
+
+  const handleRemoveSkill = (index) => {
+    const updatedData = [...skillsData];
+    updatedData.splice(index, 1);
+    setSkillsData(updatedData);
+  };
+
+  const handleAddHobby = () => {
+    setHobbiesData([...hobbiesData, { hobbyName: '', details: '' }]);
+  };
+
+  const handleRemoveHobby = (index) => {
+    const updatedData = [...hobbiesData];
+    updatedData.splice(index, 1);
+    setHobbiesData(updatedData);
+  };
   
   return (
     <div className='profile-form'>
@@ -111,6 +91,7 @@ const ProfileForm = () => {
                 {/* ... */}
               </div>
               <input type="text" placeholder='Details' />
+              <button onClick={() => handleRemoveExperience(index)}>Remove</button>
             </div>
           ))}
           <button onClick={handleAddExperience}>Add</button>
@@ -123,6 +104,7 @@ const ProfileForm = () => {
               <input type="text" placeholder="Level of education" />
               <input type="text" placeholder="Year of graduation" />
               <input type="text" placeholder='Details' />
+              <button onClick={() => handleRemoveEducation(index)}>Remove</button>
             </div>
           ))}
           <button onClick={handleAddEducation}>Add</button>
@@ -134,6 +116,7 @@ const ProfileForm = () => {
             <div key={index} className="skills-inputs">
               <input type="text" placeholder="Skill name" />
               <input type="text" placeholder="Details" />
+              <button onClick={() => handleRemoveSkill(index)}>Remove</button>
             </div>
           ))}
           <button onClick={handleAddSkill}>Add</button>
@@ -145,6 +128,7 @@ const ProfileForm = () => {
             <div key={index} className="hobbies-inputs">
               <input type="text" placeholder="Hobby name" />
               <input type="text" placeholder="Details" />
+              <button onClick={() => handleRemoveHobby(index)}>Remove</button>
             </div>
           ))}
           <button onClick={handleAddHobby}>Add</button>
