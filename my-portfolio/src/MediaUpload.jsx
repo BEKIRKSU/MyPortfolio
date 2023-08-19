@@ -3,8 +3,8 @@ import './media-upload.css';
 
 const MediaUpload = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [uploadedImage, setUploadedImage] = useState(null);
-  const [uploadedVideo, setUploadedVideo] = useState(null);
+  const [mediaItems, setMediaItems] = useState([]);
+  const MAX_MEDIA_ITEMS = 10; // Maximum number of media items allowed
 
   const handleFileChange = (event, type) => {
     const file = event.target.files[0];
@@ -12,12 +12,8 @@ const MediaUpload = () => {
 
     reader.onloadend = () => {
       const dataURL = reader.result;
-      if (type === 'image') {
-        setUploadedImage(dataURL);
-        setUploadedVideo(null);
-      } else if (type === 'video') {
-        setUploadedVideo(dataURL);
-        setUploadedImage(null);
+      if (mediaItems.length < MAX_MEDIA_ITEMS) {
+        setMediaItems((prevMediaItems) => [...prevMediaItems, { type, dataURL }]);
       }
     };
 
@@ -30,7 +26,6 @@ const MediaUpload = () => {
     setIsExpanded(!isExpanded);
   };
 
-
   return (
     <div className="media-container">
       <h2>Media</h2>
@@ -40,23 +35,24 @@ const MediaUpload = () => {
           <div>
             <label htmlFor="photo-upload">Upload Photo:</label>
             <input type="file" id="photo-upload" accept="image/*" onChange={(e) => handleFileChange(e, 'image')} />
-            {uploadedImage && (
-              <div>
-                <img src={uploadedImage} alt="Uploaded Image" style={{ maxWidth: '100%', marginTop: '10px' }} />
-              </div>
-            )}
           </div>
           <div>
             <label htmlFor="video-upload">Upload Video:</label>
             <input type="file" id="video-upload" accept="video/*" onChange={(e) => handleFileChange(e, 'video')} />
-            {uploadedVideo && (
-              <div>
-                <video controls style={{ maxWidth: '100%', marginTop: '10px' }}>
-                  <source src={uploadedVideo} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+          </div>
+          <div className="media-items">
+            {mediaItems.map((mediaItem, index) => (
+              <div key={index}>
+                {mediaItem.type === 'image' ? (
+                  <img src={mediaItem.dataURL} alt={`Uploaded Image ${index}`} style={{ maxWidth: '100%', marginTop: '10px' }} />
+                ) : (
+                  <video controls style={{ maxWidth: '100%', marginTop: '10px' }}>
+                    <source src={mediaItem.dataURL} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
               </div>
-            )}
+            ))}
           </div>
         </div>
       )}
