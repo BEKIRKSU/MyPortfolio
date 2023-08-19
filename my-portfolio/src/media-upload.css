@@ -93,7 +93,7 @@
 
 .buttons-photo label:before {
   content: "Photo";
-  background-color: #3498db;
+  background-color: #002147;
   color: white;
   padding: 8px 12px;
   border-radius: 5px;
@@ -101,7 +101,7 @@
 }
 
 .buttons-photo input[type="file"]:hover + label:before {
-  background-color: #2980b9;
+  background-color: #002147;
 }
 
 /* Style when a file is chosen */
@@ -136,7 +136,7 @@
 
 .buttons-video  label:before {
   content: "Video";
-  background-color: #3498db;
+  background-color: #002147;
   color: white;
   padding: 8px 12px;
   border-radius: 5px;
@@ -144,7 +144,7 @@
 }
 
 .buttons-video  input[type="file"]:hover + label:before {
-  background-color: #2980b9;
+  background-color: #002147;
 }
 
 /* Style when a file is chosen */
