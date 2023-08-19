@@ -41,17 +41,21 @@ const MediaUpload = () => {
             <label htmlFor="photo-upload">Upload Photo:</label>
             <input type="file" id="photo-upload" accept="image/*" onChange={(e) => handleFileChange(e, 'image')} />
             {uploadedImage && (
-              <img src={uploadedImage} alt="Uploaded Image" style={{ maxWidth: '100%', marginTop: '10px' }} />
+              <div>
+                <img src={uploadedImage} alt="Uploaded Image" style={{ maxWidth: '100%', marginTop: '10px' }} />
+              </div>
             )}
           </div>
           <div>
             <label htmlFor="video-upload">Upload Video:</label>
             <input type="file" id="video-upload" accept="video/*" onChange={(e) => handleFileChange(e, 'video')} />
             {uploadedVideo && (
-              <video controls style={{ maxWidth: '100%', marginTop: '10px' }}>
-                <source src={uploadedVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <div>
+                <video controls style={{ maxWidth: '100%', marginTop: '10px' }}>
+                  <source src={uploadedVideo} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             )}
           </div>
         </div>
