@@ -63,3 +63,53 @@
   height: auto;
   display: block;
 }
+
+.button-view-collapse {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.button-view-collapse label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+
+.buttons-video-photo {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+}
+
+.buttons-video-photo label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+ .buttons-video-photo input[type="file"] {
+  display: none; 
+} 
+
+.buttons-video-photo label:before {
+  content: "Choose File";
+  background-color: #3498db;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons-video-photo input[type="file"]:hover + label:before {
+  background-color: #2980b9;
+}
+
+/* Style when a file is chosen */
+.buttons-video-photo input[type="file"]:focus + label:before {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+}
+
+.buttons-video-photo input[type="file"]::file-selector-button {
+  display: none;
+}
