@@ -30,6 +30,7 @@ const MediaUpload = () => {
     setIsExpanded(!isExpanded);
   };
 
+
   return (
     <div className="media-container">
       <h2>Media</h2>
