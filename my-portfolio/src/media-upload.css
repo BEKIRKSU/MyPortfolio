@@ -76,23 +76,23 @@
 }
 
 
-.buttons-video-photo {
+.buttons-photo {
   display: flex;
   align-items: center;
   margin-top: 1vw;
 }
 
-.buttons-video-photo label {
+.buttons-photo label {
   margin-right: 10px;
   font-weight: bold;
 }
 
- .buttons-video-photo input[type="file"] {
+ .buttons-photo input[type="file"] {
   display: none; 
 } 
 
-.buttons-video-photo label:before {
-  content: "Choose File";
+.buttons-photo label:before {
+  content: "Photo";
   background-color: #3498db;
   color: white;
   padding: 8px 12px;
@@ -100,16 +100,59 @@
   cursor: pointer;
 }
 
-.buttons-video-photo input[type="file"]:hover + label:before {
+.buttons-photo input[type="file"]:hover + label:before {
   background-color: #2980b9;
 }
 
 /* Style when a file is chosen */
-.buttons-video-photo input[type="file"]:focus + label:before {
+.buttons-photo input[type="file"]:focus + label:before {
   outline: none;
   box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
 }
 
-.buttons-video-photo input[type="file"]::file-selector-button {
+.buttons-photo input[type="file"]::file-selector-button {
+  display: none;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+.buttons-video {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+}
+
+.buttons-video label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.buttons-video  input[type="file"] {
+  display: none; 
+} 
+
+.buttons-video  label:before {
+  content: "Video";
+  background-color: #3498db;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons-video  input[type="file"]:hover + label:before {
+  background-color: #2980b9;
+}
+
+/* Style when a file is chosen */
+.buttons-video  input[type="file"]:focus + label:before {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+}
+
+.buttons-video  input[type="file"]::file-selector-button {
   display: none;
 }
