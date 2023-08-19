@@ -42,7 +42,7 @@ const MediaUpload = () => {
           </div>
           <div className="media-items">
             {mediaItems.map((mediaItem, index) => (
-              <div key={index}>
+              <div key={index} className="media-item">
                 {mediaItem.type === 'image' ? (
                   <img src={mediaItem.dataURL} alt={`Uploaded Image ${index}`} style={{ maxWidth: '100%', marginTop: '10px' }} />
                 ) : (
