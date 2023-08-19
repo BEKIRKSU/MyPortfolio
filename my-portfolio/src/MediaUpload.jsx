@@ -32,11 +32,11 @@ const MediaUpload = () => {
       <button onClick={toggleExpand}>{isExpanded ? 'Collapse' : 'View'}</button>
       {isExpanded && (
         <div>
-          <div>
+          <div className='buttons-video-photo'>
             <label htmlFor="photo-upload">Upload Photo:</label>
             <input type="file" id="photo-upload" accept="image/*" onChange={(e) => handleFileChange(e, 'image')} />
           </div>
-          <div>
+          <div className="buttons-video-photo">
             <label htmlFor="video-upload">Upload Video:</label>
             <input type="file" id="video-upload" accept="video/*" onChange={(e) => handleFileChange(e, 'video')} />
           </div>
