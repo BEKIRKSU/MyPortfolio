@@ -8,7 +8,10 @@
   background-color: #eeeeee; 
   padding: 20px; 
   margin-top: 10px;
+  transition: all 0.3s ease;
 }
 
-
-
+.media-container.collapsed {
+  max-height: 50px; 
+  overflow: hidden; 
+}
