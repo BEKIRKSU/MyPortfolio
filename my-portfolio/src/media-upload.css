@@ -15,3 +15,13 @@
   max-height: 50px; 
   overflow: hidden; 
 }
+
+.media-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.media-item {
+  flex: 1;
+  margin: 1vw;
+}
