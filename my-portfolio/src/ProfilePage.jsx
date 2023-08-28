@@ -67,32 +67,33 @@ const ProfilePage = () => {
       >
       </div>
       <div className="details-container">
-        <div className="top-profile-heading">
-        <h4>Profile Details</h4>
-          {isEditingProfile ? (
-            <button className="edit-button" onClick={handleSaveProfile}>
-              Save
-            </button>
-          ) : (
-            <button className="edit-button" onClick={handleEditProfile}>
-              Edit
-            </button>
-          )}
-        </div>
+      <div className="top-profile-heading">
+  <h4>Profile Details</h4>
+  {isEditingProfile ? (
+    <button className="edit-button" onClick={handleSaveProfile}>
+      Save
+    </button>
+  ) : (
+    <button className="edit-button" onClick={handleEditProfile}>
+      Edit
+    </button>
+  )}
+</div>
         <ol>
         <li>
-  <label htmlFor="full-name">Full Name:</label>
-  <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"/>
-</li>
-<li>
-  <label htmlFor="location">Location:</label>
-  <input
-    type="text"
-    id="location"
-    name="location"
-    placeholder="Enter your location"
-    autoComplete="off" 
-  />
+        <label htmlFor="full-name">Full Name:</label>
+    {isEditingProfile ? (
+      <input
+        type="text"
+        id="full-name"
+        name="full-name"
+        placeholder="Enter your full name"
+        // Allow editing when isEditingProfile is true
+        readOnly={!isEditingProfile}
+      />
+    ) : (
+      <p>Display the full name here</p>
+    )}
 </li>
           <CountryList />
        <li>
