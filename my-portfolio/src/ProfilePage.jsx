@@ -36,6 +36,11 @@ const ProfilePage = () => {
     setIsEditingProfile(true);
   };
 
+  const handleSaveProfile = () => {
+    setIsEditingProfile(false);
+    // Add logic to save profile details
+  };
+
   const handleEditContact = () => {
     // Define the logic for editing contact details
     // For example, navigate to an edit page or show a form/modal
