@@ -42,8 +42,7 @@ const ProfilePage = () => {
   };
 
   const handleEditContact = () => {
-    // Define the logic for editing contact details
-    // For example, navigate to an edit page or show a form/modal
+    setIsEditingContact(true);
   };
 
   return (
