@@ -211,7 +211,9 @@ const ProfilePage = () => {
     name="phone"
     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" // Add a pattern for phone number format
     placeholder="Enter phone number"
-    autoComplete="off"
+    value={phoneInput}
+    onChange={(e) => setPhoneInput(e.target.value)}
+    readOnly={!isEditingProfile}
   />
 </li>
 <li>
