@@ -33,8 +33,7 @@ const ProfilePage = () => {
   }, []);
 
   const handleEditProfile = () => {
-    // Define the logic for editing profile details
-    // For example, navigate to an edit page or show a form/modal
+    setIsEditingProfile(true);
   };
 
   const handleEditContact = () => {
