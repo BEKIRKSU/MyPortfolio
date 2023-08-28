@@ -5,7 +5,6 @@ import './ProfilePage.css';
 import CountryList from './CountryList';
 import ProfileForm from './ProfileForm';
 import MediaUpload from './MediaUpload';
-import Footer from './Footer';
 
 
 const ProfilePage = () => {
