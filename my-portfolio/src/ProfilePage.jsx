@@ -68,10 +68,15 @@ const ProfilePage = () => {
       </div>
       <div className="details-container">
         <div className="top-profile-heading">
-          <h4>Profile Details</h4>
-          <button className="edit-button" onClick={handleEditProfile}>
-            Edit
-          </button>
+          <h4>Profile Details</h4> {isEditingProfile ? (
+              <button className="edit-button" onClick={handleSaveProfile}>
+                Save
+              </button>
+              ) : (
+                <button className="edit-button" onClick={handleEditProfile}>
+                  Edit
+                </button>
+              )}
         </div>
         <ol>
         <li>
@@ -118,9 +123,15 @@ const ProfilePage = () => {
       <div className="contact-details">
         <div className="top-profile-heading">
           <h4>Contact Details / Other Sites</h4>
-          <button className="edit-button" onClick={handleEditContact}>
-            Edit
-          </button>
+          {isEditingContact ? (
+              <button className="edit-button" onClick={handleSaveContact}>
+                Save
+              </button>
+            ) : (
+              <button className="edit-button" onClick={handleEditContact}>
+                Edit
+              </button>
+            )}
         </div>
         <ol>
         <li>
