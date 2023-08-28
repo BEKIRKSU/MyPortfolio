@@ -9,6 +9,8 @@ import MediaUpload from './MediaUpload';
 
 const ProfilePage = () => {
   const navigate = useNavigate();
+  const [isEditingProfile, setIsEditingProfile] = useState(false);
+  const [isEditingContact, setIsEditingContact] = useState(false);
 
   const handleBackToHome = () => {
     navigate('/');
