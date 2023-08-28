@@ -12,9 +12,12 @@ const ProfilePage = () => {
   const [isEditingProfile, setIsEditingProfile] = useState(false);
   const [isEditingContact, setIsEditingContact] = useState(false);
   const [fullNameInput, setFullNameInput] = useState("");
-  const [workVisaInput, setWorkVisaInput] = useState(""); // Add this line
-  const [authorizedUKInput, setAuthorizedUKInput] = useState(""); // Add this line
+  const [nationalityInput, setNationalityInput] = useState(""); 
+  const [workVisaInput, setWorkVisaInput] = useState(""); 
+  const [authorizedUKInput, setAuthorizedUKInput] = useState(""); 
   const [relocateInput, setRelocateInput] = useState(""); 
+  const [emailInput, setEmailInput] = useState(""); 
+  const [phoneInput, setPhoneInput] = useState("");
 
   const handleBackToHome = () => {
     navigate('/');
@@ -103,6 +106,22 @@ const ProfilePage = () => {
   
 
           <CountryList />
+           <li>
+            <label htmlFor="nationality">Nationality:</label>
+            {isEditingProfile ? (
+              <input
+                type="text"
+                id="nationality"
+                name="nationality"
+                placeholder="Enter your nationality"
+                value={nationalityInput}
+                onChange={(e) => setNationalityInput(e.target.value)}
+                readOnly={!isEditingProfile}
+              />
+            ) : (
+              <p>{nationalityInput}</p>
+            )}
+          </li>
           <li>
   <label htmlFor="work-visa">Do you have a valid work visa for the UK?</label>
   {isEditingProfile ? (
