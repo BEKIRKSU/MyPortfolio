@@ -11,6 +11,7 @@ const ProfilePage = () => {
   const navigate = useNavigate();
   const [isEditingProfile, setIsEditingProfile] = useState(false);
   const [isEditingContact, setIsEditingContact] = useState(false);
+  const [fullNameInput, setFullNameInput] = useState("");
 
   const handleBackToHome = () => {
     navigate('/');
@@ -81,20 +82,23 @@ const ProfilePage = () => {
 </div>
         <ol>
         <li>
-        <label htmlFor="full-name">Full Name:</label>
-    {isEditingProfile ? (
-      <input
-        type="text"
-        id="full-name"
-        name="full-name"
-        placeholder="Enter your full name"
-        // Allow editing when isEditingProfile is true
-        readOnly={!isEditingProfile}
-      />
-    ) : (
-      <p>Display the full name here</p>
-    )}
-</li>
+            <label htmlFor="full-name">Full Name:</label>
+            {isEditingProfile ? (
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Enter your full name"
+                value={fullNameInput}
+                onChange={(e) => setFullNameInput(e.target.value)}
+                readOnly={false} // Input is editable when editing profile
+              />
+            ) : (
+              <p>{fullNameInput}</p>
+            )}
+          </li>
+  
+
           <CountryList />
        <li>
   <label htmlFor="work-visa">Do you have a valid work visa for the UK?</label>
