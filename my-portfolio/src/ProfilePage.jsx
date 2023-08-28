@@ -188,15 +188,20 @@ const ProfilePage = () => {
         </div>
         <ol>
         <li>
-        <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter email"
-              autoComplete="off"
-              readOnly={!isEditingContact} // Add readOnly attribute based on editing mode
-            />
+  <label htmlFor="email">Email:</label>
+  {isEditingProfile ? (
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter email"
+      value={emailInput}
+      onChange={(e) => setEmailInput(e.target.value)}
+      readOnly={!isEditingProfile}
+    />
+  ) : (
+    <p>{emailInput}</p>
+  )}
 </li>
 <li>
   <label htmlFor="phone">Phone Number:</label>
