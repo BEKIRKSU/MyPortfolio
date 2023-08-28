@@ -12,6 +12,9 @@ const ProfilePage = () => {
   const [isEditingProfile, setIsEditingProfile] = useState(false);
   const [isEditingContact, setIsEditingContact] = useState(false);
   const [fullNameInput, setFullNameInput] = useState("");
+  const [workVisaInput, setWorkVisaInput] = useState(""); // Add this line
+  const [authorizedUKInput, setAuthorizedUKInput] = useState(""); // Add this line
+  const [relocateInput, setRelocateInput] = useState(""); 
 
   const handleBackToHome = () => {
     navigate('/');
@@ -100,30 +103,55 @@ const ProfilePage = () => {
   
 
           <CountryList />
-       <li>
+          <li>
   <label htmlFor="work-visa">Do you have a valid work visa for the UK?</label>
-  <select id="work-visa">
-  <option value="" disabled selected>Select</option>
-    <option value="yes">Yes</option>
-    <option value="no">No</option>
-    
-  </select>
+  {isEditingProfile ? (
+    <select
+      id="work-visa"
+      value={workVisaInput}
+      onChange={(e) => setWorkVisaInput(e.target.value)}
+    >
+      <option value="" disabled>Select</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  ) : (
+    <p>{workVisaInput}</p>
+  )}
 </li>
 <li>
   <label htmlFor="authorized-uk">Are you legally authorized to work in the UK?</label>
-  <select id="authorized-uk">
-  <option value="" disabled selected>Select</option>
-    <option value="yes">Yes</option>
-    <option value="no">No</option>
-  </select>
-</li><li>
-  <label htmlFor="relocate">Are you willing to relocate if necessary?</label>
-  <select id="relocate">
-  <option value="" disabled selected>Select</option>
-    <option value="yes">Yes</option>
-    <option value="no">No</option>
-  </select>
+  {isEditingProfile ? (
+    <select
+      id="authorized-uk"
+      value={authorizedUKInput}
+      onChange={(e) => setAuthorizedUKInput(e.target.value)}
+    >
+      <option value="" disabled>Select</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  ) : (
+    <p>{authorizedUKInput}</p>
+  )}
 </li>
+<li>
+  <label htmlFor="relocate">Are you willing to relocate if necessary?</label>
+  {isEditingProfile ? (
+    <select
+      id="relocate"
+      value={relocateInput}
+      onChange={(e) => setRelocateInput(e.target.value)}
+    >
+      <option value="" disabled>Select</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  ) : (
+    <p>{relocateInput}</p>
+  )}
+</li>
+
           </ol>
           </div>
       <div className="contact-details">
