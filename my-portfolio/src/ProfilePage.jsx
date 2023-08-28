@@ -68,15 +68,16 @@ const ProfilePage = () => {
       </div>
       <div className="details-container">
         <div className="top-profile-heading">
-          <h4>Profile Details</h4> {isEditingProfile ? (
-              <button className="edit-button" onClick={handleSaveProfile}>
-                Save
-              </button>
-              ) : (
-                <button className="edit-button" onClick={handleEditProfile}>
-                  Edit
-                </button>
-              )}
+        <h4>Profile Details</h4>
+          {isEditingProfile ? (
+            <button className="edit-button" onClick={handleSaveProfile}>
+              Save
+            </button>
+          ) : (
+            <button className="edit-button" onClick={handleEditProfile}>
+              Edit
+            </button>
+          )}
         </div>
         <ol>
         <li>
