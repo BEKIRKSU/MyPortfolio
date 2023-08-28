@@ -45,6 +45,11 @@ const ProfilePage = () => {
     setIsEditingContact(true);
   };
 
+   const handleSaveContact = () => {
+    setIsEditingContact(false);
+    // Add logic to save contact details
+  };
+
   return (
     <div>
       <div>
