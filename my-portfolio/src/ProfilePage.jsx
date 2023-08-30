@@ -174,18 +174,18 @@ const [isEditingContact, setIsEditingContact] = useState(false);
           </ol>
           </div>
       <div className="contact-details">
-        <div className="top-profile-heading">
-          <h4>Contact Details / Other Sites</h4>
-          {isEditingContact ? (
-              <button className="edit-button-contact" onClick={handleSaveContact}>
-                Save
-              </button>
-            ) : (
-              <button className="edit-button-contact" onClick={handleEditContact}>
-                Edit
-              </button>
-            )}
-        </div>
+      <div className="top-profile-heading">
+  <h4>Contact Details / Other Sites</h4>
+  {isEditingContact ? (
+    <button className="edit-button" onClick={handleSaveContact}>
+      Save
+    </button>
+  ) : (
+    <button className="edit-button" onClick={handleEditContact}>
+      Edit
+    </button>
+  )}
+</div>
         <ol>
         <li>
   <label htmlFor="email">Email:</label>
