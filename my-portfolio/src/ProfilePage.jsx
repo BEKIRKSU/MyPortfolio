@@ -97,7 +97,7 @@ const ProfilePage = () => {
                 placeholder="Enter your full name"
                 value={fullNameInput}
                 onChange={(e) => setFullNameInput(e.target.value)}
-                readOnly={false} 
+                readOnly={false} // Input is editable when editing profile
               />
             ) : (
               <p>{fullNameInput}</p>
