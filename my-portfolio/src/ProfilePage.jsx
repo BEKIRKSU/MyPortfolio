@@ -10,7 +10,7 @@ import MediaUpload from './MediaUpload';
 const ProfilePage = () => {
   const navigate = useNavigate();
   const [isEditingProfile, setIsEditingProfile] = useState(false);
-  const [isEditingContact, setIsEditingContact] = useState(false);
+const [isEditingContact, setIsEditingContact] = useState(false);
   const [fullNameInput, setFullNameInput] = useState("");
   const [nationalityInput, setNationalityInput] = useState(""); 
   const [workVisaInput, setWorkVisaInput] = useState(""); 
