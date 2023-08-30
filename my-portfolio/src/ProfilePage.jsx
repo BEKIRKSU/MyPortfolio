@@ -42,17 +42,17 @@ const [isEditingContact, setIsEditingContact] = useState(false);
   const handleEditProfile = () => {
     setIsEditingProfile(true);
   };
-
+  
   const handleSaveProfile = () => {
     setIsEditingProfile(false);
     // Add logic to save profile details
   };
-
+  
   const handleEditContact = () => {
     setIsEditingContact(true);
   };
-
-   const handleSaveContact = () => {
+  
+  const handleSaveContact = () => {
     setIsEditingContact(false);
     // Add logic to save contact details
   };
