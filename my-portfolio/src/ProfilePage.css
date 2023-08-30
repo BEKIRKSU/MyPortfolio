@@ -52,6 +52,15 @@
   font-weight: bold;
 }
 
+.edit-button-contact {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 li {
   display: flex;
   height: auto;
