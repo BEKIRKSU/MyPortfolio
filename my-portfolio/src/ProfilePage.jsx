@@ -45,7 +45,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
   
   const handleSaveProfile = () => {
     setIsEditingProfile(false);
-    // Add logic to save profile details
+   
   };
   
   const handleEditContact = () => {
