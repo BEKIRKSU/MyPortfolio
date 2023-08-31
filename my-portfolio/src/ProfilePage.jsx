@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import './ProfilePage.css';
-import CountryList from './CountryList';
+// import CountryList from './CountryList';
 import ProfileForm from './ProfileForm';
 import MediaUpload from './MediaUpload';
 
