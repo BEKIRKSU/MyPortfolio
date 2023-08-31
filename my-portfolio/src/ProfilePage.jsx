@@ -29,7 +29,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
     if (locationInput) {
       const autocomplete = new window.google.maps.places.Autocomplete(locationInput);
   
-      // Listen for place_changed event to get selected location
+      
       autocomplete.addListener('place_changed', () => {
         const place = autocomplete.getPlace();
         if (place && place.formatted_address) {
