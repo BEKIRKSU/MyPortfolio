@@ -209,7 +209,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
     type="tel"
     id="phone"
     name="phone"
-    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" // Add a pattern for phone number format
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
     placeholder="Enter phone number"
     value={phoneInput}
     onChange={(e) => setPhoneInput(e.target.value)}
