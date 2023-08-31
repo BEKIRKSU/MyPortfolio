@@ -54,7 +54,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
   
   const handleSaveContact = () => {
     setIsEditingContact(false);
-    // Add logic to save contact details
+    
   };
 
   return (
