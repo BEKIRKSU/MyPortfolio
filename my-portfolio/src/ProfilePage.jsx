@@ -107,7 +107,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
 
           {/* <CountryList /> */}
            <li>
-            <label htmlFor="nationality">Nationality</label>
+            <label htmlFor="nationality">Nationality:</label>
             {isEditingProfile ? (
                <select
                id="nationality"
