@@ -118,7 +118,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
                readOnly={!isEditingProfile}
              >
                <option value="" disabled selected>Select your nationality</option>
-                <option value="AF">Afghanistan</option>
+                <option value="AFdsf">Afghanistan</option>
                 <option value="AL">Albania</option>
                 <option value="DZ">Algeria</option>
                 <option value="AD">Andorra</option>
