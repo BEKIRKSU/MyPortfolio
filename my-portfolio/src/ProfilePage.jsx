@@ -75,7 +75,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       </div>
       <div className="details-container">
       <div className="top-profile-heading">
-  <h4>Profile Detail</h4>
+  <h4>Profile Details</h4>
   {isEditingProfile ? (
     <button className="edit-button" onClick={handleSaveProfile}>
       Save
