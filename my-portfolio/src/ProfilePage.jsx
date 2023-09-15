@@ -341,7 +341,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p className="professionalFont">{workVisaInput}</p>
+    <p className="professionalFont">{capitalizeName(workVisaInput)}</p>
   )}
 </li>
 <li>
@@ -357,7 +357,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p className="professionalFont">{authorizedUKInput}</p>
+    <p className="professionalFont">{capitalizeName(authorizedUKInput)}</p>
   )}
 </li>
 <li>
@@ -373,7 +373,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p className="professionalFont">{relocateInput}</p>
+    <p className="professionalFont">{capitalizeName(relocateInput)}</p>
   )}
 </li>
 
