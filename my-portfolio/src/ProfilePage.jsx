@@ -341,7 +341,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p>{workVisaInput}</p>
+    <p className="professionalFont">{workVisaInput}</p>
   )}
 </li>
 <li>
