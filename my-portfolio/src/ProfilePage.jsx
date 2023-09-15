@@ -406,7 +406,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
     readOnly={!isEditingProfile}
   />
 ) : (
-  <p>{emailInput.toLowerCase()}</p>
+  <p className="professionalFont">{emailInput.toLowerCase()}</p>
 )}
 </li>
 <li>
