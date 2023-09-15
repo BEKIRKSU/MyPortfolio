@@ -325,7 +325,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
 
               </select>
               ) : (
-                <p>{nationalityInput}</p>
+                <p className="professionalFont">{nationalityInput}</p>
               )}
             </li>
           <li>
