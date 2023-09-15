@@ -36,6 +36,9 @@
   padding-right: 100px;
 }
 
+.professionalFont {
+  font-family: 'Times New Roman', serif;
+}
 .contact-details {
   display: flex;
   flex-direction: column;
