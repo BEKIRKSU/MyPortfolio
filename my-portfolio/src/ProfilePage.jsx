@@ -57,7 +57,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
     
   };
 
-  function capitalizeName(name) {
+  function capitalizeFirstLetter(name) {
     return name
       .split(' ')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
@@ -108,7 +108,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       readOnly={false}
     />
   ) : (
-    <p className="professionalFont">{capitalizeName(fullNameInput)}</p>
+    <p className="professionalFont">{capitalizeFirstLetter(fullNameInput)}</p>
   )}
 </li>
   
@@ -341,7 +341,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p className="professionalFont">{capitalizeName(workVisaInput)}</p>
+    <p className="professionalFont">{capitalizeFirstLetter(workVisaInput)}</p>
   )}
 </li>
 <li>
@@ -357,7 +357,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p className="professionalFont">{capitalizeName(authorizedUKInput)}</p>
+    <p className="professionalFont">{capitalizeFirstLetter(authorizedUKInput)}</p>
   )}
 </li>
 <li>
@@ -373,7 +373,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p className="professionalFont">{capitalizeName(relocateInput)}</p>
+    <p className="professionalFont">{capitalizeFirstLetter(relocateInput)}</p>
   )}
 </li>
 
