@@ -90,15 +90,15 @@ const [isEditingContact, setIsEditingContact] = useState(false);
         <li>
             <label htmlFor="full-name">Full Name:</label>
             {isEditingProfile ? (
-              <input
-                type="text"
-                id="full-name"
-                name="full-name"
-                placeholder="Enter your full name"
-                value={fullNameInput}
-                onChange={(e) => setFullNameInput(e.target.value)}
-                readOnly={false} 
-              />
+             <input
+             type="text"
+             id="full-name"
+             name="full-name"
+             placeholder="Enter your full name"
+             value={fullNameInput}
+             onChange={(e) => setFullNameInput(e.target.value.replace(/[^a-zA-Z\s'-]/g, ''))}
+             readOnly={false}
+           />
             ) : (
               <p>{fullNameInput}</p>
             )}
