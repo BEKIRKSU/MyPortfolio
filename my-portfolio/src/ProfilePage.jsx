@@ -403,6 +403,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
 </li>
 <li>
   <label htmlFor="phone">Phone Number:</label>
+  {isEditingProfile ? (
   <input
     type="tel"
     id="phone"
@@ -413,6 +414,9 @@ const [isEditingContact, setIsEditingContact] = useState(false);
     onChange={(e) => setPhoneInput(e.target.value)}
     readOnly={!isEditingProfile}
   />
+  ) : (
+    <p>{phoneInput}</p>
+  )}
 </li>
 <li>
     <label>Other profiles:</label>
