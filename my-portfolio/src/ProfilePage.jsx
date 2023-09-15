@@ -108,7 +108,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       readOnly={false}
     />
   ) : (
-    <p>{capitalizeName(fullNameInput)}</p>
+    <p className="professionalFont">{capitalizeName(fullNameInput)}</p>
   )}
 </li>
   
