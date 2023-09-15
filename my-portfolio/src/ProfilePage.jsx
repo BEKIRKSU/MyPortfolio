@@ -94,22 +94,23 @@ const [isEditingContact, setIsEditingContact] = useState(false);
   )}
 </div>
         <ol>
-        <li>
-            <label htmlFor="full-name">Full Name:</label>
-            {isEditingProfile ? (
-             <input
-             type="text"
-             id="full-name"
-             name="full-name"
-             placeholder="Enter your full name"
-             value={fullNameInput}
-             onChange={(e) => setFullNameInput(e.target.value.replace(/[^a-zA-Z\s'-]/g, ''))}
-             readOnly={false}
-           />
-            ) : (
-              <p>{fullNameInput}</p>
-            )}
-          </li>
+      
+<li>
+  <label htmlFor="full-name">Full Name:</label>
+  {isEditingProfile ? (
+    <input
+      type="text"
+      id="full-name"
+      name="full-name"
+      placeholder="Enter your full name"
+      value={fullNameInput}
+      onChange={(e) => setFullNameInput(e.target.value.replace(/[^a-zA-Z\s'-]/g, ''))}
+      readOnly={false}
+    />
+  ) : (
+    <p>{capitalizeName(fullNameInput)}</p>
+  )}
+</li>
   
 
           {/* <CountryList /> */}
