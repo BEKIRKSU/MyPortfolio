@@ -423,7 +423,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
  readOnly={!isEditingProfile}
 />
   ) : (
-    <p>{phoneInput}</p>
+    <p className="professionalFont">{phoneInput}</p>
   )}
 </li>
 <li>
