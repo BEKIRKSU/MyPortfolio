@@ -38,6 +38,7 @@
 
 .professionalFont {
   font-family: 'Arial', serif;
+  font-size: 15px;
 }
 .contact-details {
   display: flex;
