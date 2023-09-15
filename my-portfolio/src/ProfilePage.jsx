@@ -357,7 +357,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p>{authorizedUKInput}</p>
+    <p className="professionalFont">{authorizedUKInput}</p>
   )}
 </li>
 <li>
@@ -373,7 +373,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <option value="no">No</option>
     </select>
   ) : (
-    <p>{relocateInput}</p>
+    <p className="professionalFont">{relocateInput}</p>
   )}
 </li>
 
