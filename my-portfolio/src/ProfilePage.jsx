@@ -404,16 +404,16 @@ const [isEditingContact, setIsEditingContact] = useState(false);
 <li>
   <label htmlFor="phone">Phone Number:</label>
   {isEditingProfile ? (
-  <input
-    type="tel"
-    id="phone"
-    name="phone"
-    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
-    placeholder="Enter phone number"
-    value={phoneInput}
-    onChange={(e) => setPhoneInput(e.target.value)}
-    readOnly={!isEditingProfile}
-  />
+ <input
+ type="tel"
+ id="phone"
+ name="phone"
+ pattern="[+0-9]*"
+ placeholder="Enter phone number"
+ value={phoneInput}
+ onChange={(e) => setPhoneInput(e.target.value.replace(/[^\d+]/g, ''))}
+ readOnly={!isEditingProfile}
+/>
   ) : (
     <p>{phoneInput}</p>
   )}
