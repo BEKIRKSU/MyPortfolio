@@ -84,14 +84,14 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <div className="top-profile-heading">
   <h4>Profile Details</h4>
   {isEditingProfile ? (
-    <button className="edit-button" onClick={handleSaveProfile}>
-      Save
-    </button>
-  ) : (
-    <button className="edit-button" onClick={handleEditProfile}>
-      Edit
-    </button>
-  )}
+  <button className="edit-button save" onClick={handleSaveProfile}>
+    Save
+  </button>
+) : (
+  <button className="edit-button edit" onClick={handleEditProfile}>
+    Edit
+  </button>
+)}
 </div>
         <ol>
       
