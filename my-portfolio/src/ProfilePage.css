@@ -46,14 +46,20 @@
   padding-left: 25px;
   padding-right: 100px;
 }
-
 .edit-button {
   background: none;
   border: none;
-  color: #002147;
   cursor: pointer;
   font-size: 14.5px;
   font-weight: bold;
+}
+
+.edit-button.edit {
+  color: blue;
+}
+
+.edit-button.save {
+  color: red;
 }
 
 .edit-button-contact {
