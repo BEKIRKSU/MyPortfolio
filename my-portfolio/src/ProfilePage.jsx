@@ -89,7 +89,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
   return (
     <div>
       <div>
-      {/* <Navbar onBackToHome={handleBackToHome}/> */}
+      <Navbar onBackToHome={handleBackToHome}/>
       </div>
     <div className="profile-container">
      <div
