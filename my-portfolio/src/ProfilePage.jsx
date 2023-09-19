@@ -64,6 +64,28 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       .join(' ');
   }
 
+
+  // return (
+  //   <div>
+  //     <div>
+  //       <Navbar onBackToHome={handleBackToHome}/>
+  //     </div>
+  //     <div className="profile-container">
+  //       <div
+  //         className="profile-photo"
+  //         style={{
+  //           backgroundImage: `url("${photoURL}")`,
+  //           backgroundSize: 'cover',
+  //           backgroundPosition: 'center',
+  //         }}
+  //         ></div>
+  //         <input 
+  //           type="text" 
+  //           value={photoURL} 
+  //           onChange={(e) => setPhotoURL(e.target.value)} 
+  //           placeholder="Enter new image URL"
+  //         />
+    
   return (
     <div>
       <div>
