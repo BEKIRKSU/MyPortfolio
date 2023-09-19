@@ -66,7 +66,8 @@ const [isEditingContact, setIsEditingContact] = useState(false);
 
 
   // return (
-
+  //   <div>
+  //     <div>
   //       <Navbar onBackToHome={handleBackToHome}/>
   //     </div>
   //     <div className="profile-container">
@@ -79,8 +80,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
   //         }}
   //         ></div>
   //         <input 
-  //           type="text" 
-  //           value={photoURL} 
+  
   //           onChange={(e) => setPhotoURL(e.target.value)} 
   //           placeholder="Enter new image URL"
   //         />
