@@ -51,7 +51,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       reader.readAsDataURL(file);
     }
   };
-  
+
   const handleEditProfile = () => {
     setIsEditingProfile(true);
   };
@@ -99,22 +99,22 @@ const [isEditingContact, setIsEditingContact] = useState(false);
   //           placeholder="Enter new image URL"
   //         />
     
-  return (
+   return (
     <div>
       <div>
-      <Navbar onBackToHome={handleBackToHome}/>
+        <Navbar onBackToHome={handleBackToHome} />
       </div>
-    <div className="profile-container">
-     <div
-        className="profile-photo"
-        style={{
-          backgroundImage:
-            'url("https://media.gettyimages.com/id/73635897/photo/manchester-united-kingdom-manchester-uniteds-cristiano-ronaldo-celebrates-scoring-from-the.jpg?s=612x612&w=gi&k=20&c=cv_-zHdBoBkj57jpHEBkIIDNcblr_FOeIpsRVA1mZQw=")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-      </div>
+      <div className="profile-container">
+        <div
+          className="profile-photo"
+          style={{
+            backgroundImage: `url("${photoURL}")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+        </div>
+        <input type="file" onChange={handleFileChange} />
       <div className="details-container">
       <div className="top-profile-heading">
   <h4>Profile Details</h4>
