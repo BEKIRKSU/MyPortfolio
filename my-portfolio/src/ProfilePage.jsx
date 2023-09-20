@@ -39,6 +39,19 @@ const [isEditingContact, setIsEditingContact] = useState(false);
     }
   }, []);
 
+  const [photoURL, setPhotoURL] = useState('https://media.gettyimages.com/id/73635897/photo/manchester-united-kingdom-manchester-uniteds-cristiano-ronaldo-celebrates-scoring-from-the.jpg?s=612x612&w=gi&k=20&c=cv_-zHdBoBkj57jpHEBkIIDNcblr_FOeIpsRVA1mZQw=');
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setPhotoURL(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+  
   const handleEditProfile = () => {
     setIsEditingProfile(true);
   };
