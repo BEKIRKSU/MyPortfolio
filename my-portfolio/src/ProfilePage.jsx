@@ -145,7 +145,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
                placeholder="Enter your nationality"
                value={nationalityInput}
                onChange={(e) => setNationalityInput(e.target.value)}
-               readOnly={!isEditingProfile}
+              //  readOnly={!isEditingProfile}
              >
                <option value="" disabled selected>Select your nationality</option>
                <option value="Afghanistan">Afghanistan</option>
