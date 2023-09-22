@@ -103,7 +103,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       >
       </div>
       <div className="details-container">
-      {/* <div className="top-profile-heading">
+      <div className="top-profile-heading">
   <h4>Profile Details</h4>
   {isEditingProfile ? (
   <button className="edit-button save" onClick={handleSaveProfile}>
@@ -114,7 +114,7 @@ const [isEditingContact, setIsEditingContact] = useState(false);
     Edit
   </button>
 )}
-</div> */}
+</div>
         <ol>
       
 <li>
