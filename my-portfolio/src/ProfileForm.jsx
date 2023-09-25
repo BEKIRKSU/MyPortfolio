@@ -143,7 +143,7 @@ const ProfileForm = () => {
     </div>
     <button onClick={handleAddHobby}>Add</button>
   </div>
-)}
+)} </div>
 
   );
 };
