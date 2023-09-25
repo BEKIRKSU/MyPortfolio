@@ -96,6 +96,8 @@
   border-radius: 5px;
   cursor: pointed;
   transition: background-color 0.3s, box-shadow 0.3;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .remove-button button:hover {
