@@ -1,0 +1,40 @@
+/* App.css */
+
+/* Container for the whole app */
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  .App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Button styles */
+  .profile-button, .make-my-portfolio-button {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Button hover effect */
+  .profile-button:hover, .make-my-portfolio-button:hover {
+    background-color: #21a0fb;
+  }
+  
+  /* Link styles */
+  a {
+    text-decoration: none;
+  }
+  
