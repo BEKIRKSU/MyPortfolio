@@ -70,6 +70,9 @@
     align-items: center;
   }
 
+  .add-button-container {
+    align-self: flex-end;
+}
   .education-container {
     display: flex;
     flex-direction: column;
