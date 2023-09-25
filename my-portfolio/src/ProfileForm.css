@@ -70,6 +70,24 @@
     align-items: center;
   }
 
+  .education-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .skills-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hobbies-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .add-button-container {
     align-self: flex-end;
 }
