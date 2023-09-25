@@ -121,11 +121,20 @@
   
   
   .experience-inputs input[type="text"],
+.education-inputs input[type="text"],
+.skills-inputs input[type="text"],
+.hobbies-inputs input[type="text"],
+.duration-select select {
+  flex: 1; /* Makes each input grow to take up remaining space */
+  margin-right: 10px; /* Adds margin to the right of each input */
+}
+
+  /* .experience-inputs input[type="text"],
   .duration-select select {
  
     width: calc(33.33% - 10px); 
     margin-right: 10px; 
-  }
+  } */
   
   .duration-select select {
     width: 100%;
