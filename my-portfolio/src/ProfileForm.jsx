@@ -99,44 +99,52 @@ const ProfileForm = () => {
     <button onClick={handleAddExperience}>Add</button>
   </div>
 )}
-      {selectedTab === 'education' && (
-        <div className="profile-form-content">
-          {educationData.map((education, index) => (
-            <div key={index} className="education-inputs">
-              <input type="text" placeholder="Level of education" />
-              <input type="text" placeholder="Year of graduation" />
-              <input type="text" placeholder='Details' />
-              <button onClick={() => handleRemoveEducation(index)}>Remove</button>
-            </div>
-          ))}
-          <button onClick={handleAddEducation}>Add</button>
+     {selectedTab === 'education' && (
+  <div className="profile-form-content">
+    <div className="education-container">
+      {educationData.map((education, index) => (
+        <div key={index} className="education-inputs">
+          <input type="text" placeholder="Level of education" />
+          <input type="text" placeholder="Year of graduation" />
+          <input type="text" placeholder='Details' />
+          <button onClick={() => handleRemoveEducation(index)}>Remove</button>
         </div>
-      )}
-      {selectedTab === 'skills' && (
-        <div className="profile-form-content">
-          {skillsData.map((skill, index) => (
-            <div key={index} className="skills-inputs">
-              <input type="text" placeholder="Skill name" />
-              <input type="text" placeholder="Details" />
-              <button onClick={() => handleRemoveSkill(index)}>Remove</button>
-            </div>
-          ))}
-          <button onClick={handleAddSkill}>Add</button>
-        </div>
-      )}
-      {selectedTab === 'hobbies' && (
-        <div className="profile-form-content">
-          {hobbiesData.map((hobby, index) => (
-            <div key={index} className="hobbies-inputs">
-              <input type="text" placeholder="Hobby name" />
-              <input type="text" placeholder="Details" />
-              <button onClick={() => handleRemoveHobby(index)}>Remove</button>
-            </div>
-          ))}
-          <button onClick={handleAddHobby}>Add</button>
-        </div>
-      )}
+      ))}
     </div>
+    <button onClick={handleAddEducation}>Add</button>
+  </div>
+)}
+
+{selectedTab === 'skills' && (
+  <div className="profile-form-content">
+    <div className="skills-container">
+      {skillsData.map((skill, index) => (
+        <div key={index} className="skills-inputs">
+          <input type="text" placeholder="Skill name" />
+          <input type="text" placeholder="Details" />
+          <button onClick={() => handleRemoveSkill(index)}>Remove</button>
+        </div>
+      ))}
+    </div>
+    <button onClick={handleAddSkill}>Add</button>
+  </div>
+)}
+
+{selectedTab === 'hobbies' && (
+  <div className="profile-form-content">
+    <div className="hobbies-container">
+      {hobbiesData.map((hobby, index) => (
+        <div key={index} className="hobbies-inputs">
+          <input type="text" placeholder="Hobby name" />
+          <input type="text" placeholder="Details" />
+          <button onClick={() => handleRemoveHobby(index)}>Remove</button>
+        </div>
+      ))}
+    </div>
+    <button onClick={handleAddHobby}>Add</button>
+  </div>
+)}
+
   );
 };
 
@@ -151,10 +159,5 @@ export default ProfileForm;
 
 
   
- 
 
- 
-      // <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-      //   {/* ... similar code for tabs ... */}
-      // </div>
      
