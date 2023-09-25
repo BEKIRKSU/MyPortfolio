@@ -7,6 +7,11 @@
     max-width: 100%;
     margin: 0 auto;
   }
+  .profile-form-content {
+    display: flex;
+    flex-direction: column; /* Change from row to column */
+    align-items: flex-start; /* Align to the start if you want left alignment of children */
+}
   .tab-buttons {
     display: flex;
     justify-content: space-around;
