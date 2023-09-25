@@ -113,7 +113,9 @@ const ProfileForm = () => {
         </div>
       ))}
     </div>
+    <div className="add-button-container">
     <button onClick={handleAddEducation}>Add</button>
+    </div>
   </div>
 )}
 
@@ -128,7 +130,9 @@ const ProfileForm = () => {
         </div>
       ))}
     </div>
+    <div className="add-button-container">
     <button onClick={handleAddSkill}>Add</button>
+    </div>
   </div>
 )}
 
@@ -143,7 +147,9 @@ const ProfileForm = () => {
         </div>
       ))}
     </div>
+    <div className="add-button-container">
     <button onClick={handleAddHobby}>Add</button>
+    </div>
   </div>
 )} </div>
 
