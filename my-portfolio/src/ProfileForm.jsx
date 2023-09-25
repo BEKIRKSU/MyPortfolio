@@ -93,7 +93,7 @@ const ProfileForm = () => {
           </div>
           <input type="text" placeholder='Details' />
           <div className="remove-button">
-          <button onClick={() => handleRemoveExperience(index)}>Remove</button>
+          <button onClick={() => handleRemoveExperience(index)} disabled={experienceData.length <= 1}>Remove</button>
           </div>
         </div>
       ))}
@@ -112,7 +112,7 @@ const ProfileForm = () => {
           <input type="text" placeholder="Year of graduation" />
           <input type="text" placeholder='Details' />
           <div className="remove-button">
-          <button onClick={() => handleRemoveEducation(index)}>Remove</button>
+          <button onClick={() => handleRemoveEducation(index)} disabled={educationData.length <= 1}>Remove</button>
           </div>
         </div>
       ))}
@@ -131,7 +131,7 @@ const ProfileForm = () => {
           <input type="text" placeholder="Skill name" />
           <input type="text" placeholder="Details" />
           <div className="remove-button">
-          <button onClick={() => handleRemoveSkill(index)}>Remove</button>
+          <button onClick={() => handleRemoveSkill(index)} disabled={skillsData.length <= 1}>Remove</button>
           </div>
         </div>
       ))}
@@ -150,7 +150,7 @@ const ProfileForm = () => {
           <input type="text" placeholder="Hobby name" />
           <input type="text" placeholder="Details" />
           <div className="remove-button">
-          <button onClick={() => handleRemoveHobby(index)}>Remove</button>
+          <button onClick={() => handleRemoveHobby(index)} disabled={hobbiesData.length <= 1}>Remove</button>
           </div>
         </div>
       ))}
