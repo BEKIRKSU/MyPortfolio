@@ -12,7 +12,7 @@
   .profile-form-content {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Ensures the container takes the full width */
+    width: 100%; 
   }
 
 
@@ -75,7 +75,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%; /* Ensures each input container takes the full width */
+    width: 100%;
   }
   
   .add-button-container {
@@ -106,6 +106,7 @@
   transition: background-color 0.3s, box-shadow 0.3;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-left: auto;
 }
 
 .remove-button button:hover {
@@ -115,8 +116,8 @@
   .education-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align to the start if you want left alignment of children */
-    width: 100%; /* Adjust width as per your requirement, 20px is too less for a container */
+    align-items: flex-start; 
+    width: 100%;
   }
   
   
@@ -125,10 +126,17 @@
 .skills-inputs input[type="text"],
 .hobbies-inputs input[type="text"],
 .duration-select select {
-  flex: 1; /* Makes each input grow to take up remaining space */
-  margin-right: 10px; /* Adds margin to the right of each input */
+  flex: 1; 
+  margin-right: 10px; 
 }
 
+.experience-inputs input[type="text"]:last-child,
+.education-inputs input[type="text"]:last-child,
+.skills-inputs input[type="text"]:last-child,
+.hobbies-inputs input[type="text"]:last-child,
+.duration-select select:last-child {
+  margin-right: 0;
+}
   /* .experience-inputs input[type="text"],
   .duration-select select {
  
