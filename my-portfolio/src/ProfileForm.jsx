@@ -96,10 +96,10 @@ const ProfileForm = () => {
         </div>
       ))}
     </div>
-   
-    <button onClick={handleAddExperience}>Add</button>
-    
-  </div>
+     <div className="add-button-container">
+      <button onClick={handleAddExperience}>Add</button>
+      </div>
+    </div>
 )}
      {selectedTab === 'education' && (
   <div className="profile-form-content">
