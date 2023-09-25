@@ -67,9 +67,9 @@
   
   .experience-inputs input[type="text"],
   .duration-select select {
-    /* ... existing styles ... */
-    width: calc(33.33% - 10px); /* Divide available space into three equal parts */
-    margin-right: 10px; /* Add spacing between inputs */
+ 
+    width: calc(33.33% - 10px); 
+    margin-right: 10px; 
   }
   
   .duration-select select {
