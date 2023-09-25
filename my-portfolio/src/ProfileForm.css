@@ -7,11 +7,15 @@
     max-width: 100%;
     margin: 0 auto;
   }
+
+
   .profile-form-content {
     display: flex;
-    flex-direction: column; /* Change from row to column */
-    align-items: flex-start; /* Align to the start if you want left alignment of children */
-}
+    flex-direction: column;
+    width: 100%; /* Ensures the container takes the full width */
+  }
+
+
   .tab-buttons {
     display: flex;
     justify-content: space-around;
@@ -59,35 +63,21 @@
     border-color: #007bff;
   }
 
-  .profile-form-content {
+  /* .profile-form-content {
     display: flex;
     justify-content: space-around;
-  }
+  } */
   
-  .experience-inputs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .education-inputs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .skills-inputs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
+  .experience-inputs,
+  .education-inputs,
+  .skills-inputs,
   .hobbies-inputs {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%; /* Ensures each input container takes the full width */
   }
-
+  
   .add-button-container {
     align-self: flex-end;
 }
