@@ -88,6 +88,20 @@
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
 }
 
+.remove-button button {
+  background-color: #c74613;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointed;
+  transition: background-color 0.3s, box-shadow 0.3;
+}
+
+.remove-button button:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+}
+
   .education-container {
     display: flex;
     flex-direction: column;
