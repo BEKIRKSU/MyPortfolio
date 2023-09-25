@@ -143,7 +143,9 @@ const ProfileForm = () => {
         <div key={index} className="hobbies-inputs">
           <input type="text" placeholder="Hobby name" />
           <input type="text" placeholder="Details" />
+          <div className="remove-button">
           <button onClick={() => handleRemoveHobby(index)}>Remove</button>
+          </div>
         </div>
       ))}
     </div>
