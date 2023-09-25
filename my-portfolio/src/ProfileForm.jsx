@@ -82,21 +82,23 @@ const ProfileForm = () => {
         </div>
       </div>
       {selectedTab === 'experience' && (
-        <div className="profile-form-content">
-          {experienceData.map((experience, index) => (
-            <div key={index} className="experience-inputs">
-              <input type="text" placeholder="Experience Title" />
-              <input type="text" placeholder="Year of Experience" />
-              <div className="duration-select">
-                {/* ... */}
-              </div>
-              <input type="text" placeholder='Details' />
-              <button onClick={() => handleRemoveExperience(index)}>Remove</button>
-            </div>
-          ))}
-          <button onClick={handleAddExperience}>Add</button>
+  <div className="profile-form-content">
+    <div className="experience-container">
+      {experienceData.map((experience, index) => (
+        <div key={index} className="experience-inputs">
+          <input type="text" placeholder="Experience Title" />
+          <input type="text" placeholder="Year of Experience" />
+          <div className="duration-select">
+            {/* ... */}
+          </div>
+          <input type="text" placeholder='Details' />
+          <button onClick={() => handleRemoveExperience(index)}>Remove</button>
         </div>
-      )}
+      ))}
+    </div>
+    <button onClick={handleAddExperience}>Add</button>
+  </div>
+)}
       {selectedTab === 'education' && (
         <div className="profile-form-content">
           {educationData.map((education, index) => (
