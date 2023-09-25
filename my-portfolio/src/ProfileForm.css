@@ -64,6 +64,15 @@
     flex-direction: row;
     align-items: center;
   }
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the start if you want left alignment of children */
+    width: 100%; /* Adjust width as per your requirement, 20px is too less for a container */
+  }
+  
+  
   
   .experience-inputs input[type="text"],
   .duration-select select {
