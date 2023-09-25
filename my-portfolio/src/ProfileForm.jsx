@@ -92,7 +92,9 @@ const ProfileForm = () => {
             {/* ... */}
           </div>
           <input type="text" placeholder='Details' />
+          <div className="remove-button">
           <button onClick={() => handleRemoveExperience(index)}>Remove</button>
+          </div>
         </div>
       ))}
     </div>
@@ -109,7 +111,9 @@ const ProfileForm = () => {
           <input type="text" placeholder="Level of education" />
           <input type="text" placeholder="Year of graduation" />
           <input type="text" placeholder='Details' />
+          <div className="remove-button">
           <button onClick={() => handleRemoveEducation(index)}>Remove</button>
+          </div>
         </div>
       ))}
     </div>
@@ -126,7 +130,9 @@ const ProfileForm = () => {
         <div key={index} className="skills-inputs">
           <input type="text" placeholder="Skill name" />
           <input type="text" placeholder="Details" />
+          <div className="remove-button">
           <button onClick={() => handleRemoveSkill(index)}>Remove</button>
+          </div>
         </div>
       ))}
     </div>
