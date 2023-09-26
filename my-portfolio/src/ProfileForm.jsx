@@ -87,6 +87,15 @@ const ProfileForm = () => {
       {experienceData.map((experience, index) => (
         <div key={index} className="experience-inputs">
           <input type="text" placeholder="Experience Title" />
+          <label for="yearOfExperience">Years of Experience:</label>
+<select id="yearOfExperience" name="yearOfExperience">
+    <option value="" disabled selected>Select a year</option>
+    <option value="Less than 1">Less than 1 year</option>
+    <option value="1+ Years">1+ Years</option>
+    <option value="2-3 Years">2-3 Years</option>
+    <option value="3-5 Years+">3-5 Years</option>
+    <option value="5+ Years">5+ Years</option>
+</select>
           <input type="text" placeholder="Year of Experience" />
           <div className="duration-select">
             {/* ... */}
