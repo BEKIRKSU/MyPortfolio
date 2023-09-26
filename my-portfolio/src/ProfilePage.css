@@ -52,7 +52,10 @@
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, transform 0.3s;
+  position: absolute;
+  right: 0;
 }
+
 
 .edit-button:hover,
 .edit-button-contact:hover {
