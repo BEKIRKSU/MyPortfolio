@@ -105,15 +105,6 @@ const [isEditingContact, setIsEditingContact] = useState(false);
       <div className="details-container">
       <div className="top-profile-heading">
   <h4>Profile Details</h4>
-  {isEditingProfile ? (
-  <button className="edit-button save" onClick={handleSaveProfile}>
-    Save
-  </button>
-) : (
-  <button className="edit-button edit" onClick={handleEditProfile}>
-    Edit
-  </button>
-)}
 </div>
         <ol>
       
@@ -449,14 +440,27 @@ const [isEditingContact, setIsEditingContact] = useState(false);
         <img className="website-link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub" />
       </a>
     </div>
+    
   </li>
         </ol>
+        {isEditingProfile ? (
+  <button className="edit-button save" onClick={handleSaveProfile}>
+    Save
+  </button>
+) : (
+  <button className="edit-button edit" onClick={handleEditProfile}>
+    Edit
+  </button>
+)}
       </div>
+      
     </div>
+    
     <div className="body-of-CV">
           <div>
             <ProfileForm />
             <MediaUpload />
+
           </div>
     </div>
     </div>
