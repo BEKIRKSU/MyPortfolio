@@ -12,10 +12,10 @@ function App() {
     <Router>
     <div className="app-container">
        <header>
-        {/* Header content */}
+        {/*  */}
         </header>
         <main>
-          {/* Main content */}
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/navbar" element={<Navbar />} />
