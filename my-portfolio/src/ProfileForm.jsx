@@ -1,6 +1,69 @@
 import React, { useState } from 'react';
 import './ProfileForm.css';
 
+const ExperienceSection = ({ data, onAdd, onRemove }) => {
+  return (
+    <div>
+      {data.map((item, index) => (
+        <div key={index}>
+          <input type="text" placeholder="Title" value={item.title} />
+          <input type="text" placeholder="Year" value={item.year} />
+          <input type="text" placeholder="Duration" value={item.duration} />
+          <textarea placeholder="Details" value={item.details}></textarea>
+          <button onClick={() => onRemove(index)}>Remove</button>
+        </div>
+      ))}
+      <button onClick={onAdd}>Add Experience</button>
+    </div>
+  );
+};
+
+const EducationSection = ({ data, onAdd, onRemove }) => {
+  return (
+    <div>
+      {data.map((item, index) => (
+        <div key={index}>
+          <input type="text" placeholder="Level" value={item.level} />
+          <input type="text" placeholder="Year" value={item.year} />
+          <textarea placeholder="Details" value={item.details}></textarea>
+          <button onClick={() => onRemove(index)}>Remove</button>
+        </div>
+      ))}
+      <button onClick={onAdd}>Add Education</button>
+    </div>
+  );
+};
+
+const SkillsSection = ({ data, onAdd, onRemove }) => {
+  return (
+    <div>
+      {data.map((item, index) => (
+        <div key={index}>
+          <input type="text" placeholder="Skill Name" value={item.skillName} />
+          <textarea placeholder="Details" value={item.details}></textarea>
+          <button onClick={() => onRemove(index)}>Remove</button>
+        </div>
+      ))}
+      <button onClick={onAdd}>Add Skill</button>
+    </div>
+  );
+};
+
+const HobbiesSection = ({ data, onAdd, onRemove }) => {
+  return (
+    <div>
+      {data.map((item, index) => (
+        <div key={index}>
+          <input type="text" placeholder="Hobby Name" value={item.hobbyName} />
+          <textarea placeholder="Details" value={item.details}></textarea>
+          <button onClick={() => onRemove(index)}>Remove</button>
+        </div>
+      ))}
+      <button onClick={onAdd}>Add Hobby</button>
+    </div>
+  );
+};
+
 const ProfileForm = () => {
   const [selectedTab, setSelectedTab] = useState(null);
   const [experienceData, setExperienceData] = useState([{ title: '', year: '', duration: '', details: '' }]);
@@ -13,7 +76,7 @@ const ProfileForm = () => {
       {title}
     </button>
   );
-  
+
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
   };
@@ -57,7 +120,7 @@ const ProfileForm = () => {
     updatedData.splice(index, 1);
     setHobbiesData(updatedData);
   };
-  
+
   return (
     <div className='profile-form'>
       <div className='tab-container'>
@@ -71,19 +134,7 @@ const ProfileForm = () => {
       {selectedTab === 'skills' && <SkillsSection data={skillsData} onAdd={handleAddSkill} onRemove={handleRemoveSkill} />}
       {selectedTab === 'hobbies' && <HobbiesSection data={hobbiesData} onAdd={handleAddHobby} onRemove={handleRemoveHobby} />}
     </div>
-     );
-    };
+  );
+};
 
 export default ProfileForm;
-
-
-
-
-
-
-
-
-
-  
-
-     
