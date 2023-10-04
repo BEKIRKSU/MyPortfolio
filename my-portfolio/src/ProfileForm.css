@@ -40,7 +40,7 @@ div > div {
 
 input[type="text"],
 textarea {
-  width: 100%;
+  width: 50%;
   padding: 8px;
   margin: 5px 0;
   border: 1px solid #dcdcdc;
@@ -52,6 +52,16 @@ textarea {
 input[type="text"]:focus,
 textarea:focus {
   border-color: #007BFF;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"] {
+  width: calc(25% - 10px); 
 }
 
 button {

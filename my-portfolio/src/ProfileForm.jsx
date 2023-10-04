@@ -6,10 +6,12 @@ const ExperienceSection = ({ data, onAdd, onRemove }) => {
     <div>
       {data.map((item, index) => (
         <div key={index}>
-          <input type="text" placeholder="Title" value={item.title} />
-          <input type="text" placeholder="Year" value={item.year} />
-          <input type="text" placeholder="Duration" value={item.duration} />
-          <textarea placeholder="Details" value={item.details}></textarea>
+          <div className="input-group">
+            <input type="text" placeholder="Title" value={item.title} />
+            <input type="text" placeholder="Year" value={item.year} />
+            <input type="text" placeholder="Duration" value={item.duration} />
+            <textarea placeholder="Details" value={item.details}></textarea>
+          </div>
           <button onClick={() => onRemove(index)}>Remove</button>
         </div>
       ))}
@@ -23,9 +25,12 @@ const EducationSection = ({ data, onAdd, onRemove }) => {
     <div>
       {data.map((item, index) => (
         <div key={index}>
-          <input type="text" placeholder="Level" value={item.level} />
-          <input type="text" placeholder="Year" value={item.year} />
-          <textarea placeholder="Details" value={item.details}></textarea>
+          <div className="input-group">
+          <input type="text" placeholder="Title" value={item.title} />
+            <input type="text" placeholder="Year" value={item.year} />
+            <input type="text" placeholder="Duration" value={item.duration} />
+            <textarea placeholder="Details" value={item.details}></textarea>
+          </div>
           <button onClick={() => onRemove(index)}>Remove</button>
         </div>
       ))}
@@ -39,8 +44,12 @@ const SkillsSection = ({ data, onAdd, onRemove }) => {
     <div>
       {data.map((item, index) => (
         <div key={index}>
-          <input type="text" placeholder="Skill Name" value={item.skillName} />
-          <textarea placeholder="Details" value={item.details}></textarea>
+          <div className="input-group">
+          <input type="text" placeholder="Title" value={item.title} />
+            <input type="text" placeholder="Year" value={item.year} />
+            <input type="text" placeholder="Duration" value={item.duration} />
+            <textarea placeholder="Details" value={item.details}></textarea>
+          </div>
           <button onClick={() => onRemove(index)}>Remove</button>
         </div>
       ))}
@@ -54,8 +63,12 @@ const HobbiesSection = ({ data, onAdd, onRemove }) => {
     <div>
       {data.map((item, index) => (
         <div key={index}>
-          <input type="text" placeholder="Hobby Name" value={item.hobbyName} />
-          <textarea placeholder="Details" value={item.details}></textarea>
+          <div className="input-group">
+          <input type="text" placeholder="Title" value={item.title} />
+            <input type="text" placeholder="Year" value={item.year} />
+            <input type="text" placeholder="Duration" value={item.duration} />
+            <textarea placeholder="Details" value={item.details}></textarea>
+          </div>
           <button onClick={() => onRemove(index)}>Remove</button>
         </div>
       ))}
@@ -63,6 +76,7 @@ const HobbiesSection = ({ data, onAdd, onRemove }) => {
     </div>
   );
 };
+
 
 const ProfileForm = () => {
   const [selectedTab, setSelectedTab] = useState(null);
