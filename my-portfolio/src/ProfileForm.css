@@ -9,9 +9,10 @@
   border-radius: 8px;
 }
 
+
 .tab-container {
   display: flex;
-  gap: 10px;
+  gap: 250px; 
   margin-bottom: 20px;
 }
 
