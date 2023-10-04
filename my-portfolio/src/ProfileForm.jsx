@@ -1,14 +1,40 @@
 import React, { useState } from 'react';
 import './ProfileForm.css';
 
-const ExperienceSection = ({ data, onAdd, onRemove }) => {
+const generateYearOptions = () => {
+  const currentYear = new Date().getFullYear();
+  const startYear = 1950;
+  let years = [];
+  for (let year = currentYear; year >= startYear; year--) {
+    years.push(year);
+  }
+  return years;
+};
+
+const yearOptions = generateYearOptions();
+
+const ExperienceSection = ({ data, onAdd, onRemove, setData }) => {
+
+  const handleYearChange = (index, event) => {
+    const newExperienceData = [...data];
+    newExperienceData[index].year = event.target.value;
+    setData(newExperienceData);
+  };
+
   return (
     <div>
       {data.map((item, index) => (
         <div key={index}>
           <div className="input-group">
             <input type="text" placeholder="Title" value={item.title} />
-            <input type="text" placeholder="Year" value={item.year} />
+            <select value={item.year} onChange={(e) => handleYearChange(index, e)}>
+              <option value="" disabled>Select a year</option>
+              {yearOptions.map(year => (
+                <option key={year} value={year}>
+                  {year}
+                </option>
+              ))}
+            </select>
             <input type="text" placeholder="Duration" value={item.duration} />
             <textarea placeholder="Details" value={item.details}></textarea>
           </div>
