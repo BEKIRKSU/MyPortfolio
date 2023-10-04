@@ -12,7 +12,7 @@ const ExperienceSection = ({ data, onAdd, onRemove }) => {
             <input type="text" placeholder="Duration" value={item.duration} />
             <textarea placeholder="Details" value={item.details}></textarea>
           </div>
-          <button onClick={() => onRemove(index)}>Remove</button>
+          <button onClick={() => onRemove(index)} disabled={data.length <= 1}>Remove</button>
         </div>
       ))}
       <button onClick={onAdd}>Add Experience</button>
@@ -31,7 +31,7 @@ const EducationSection = ({ data, onAdd, onRemove }) => {
             <input type="text" placeholder="Duration" value={item.duration} />
             <textarea placeholder="Details" value={item.details}></textarea>
           </div>
-          <button onClick={() => onRemove(index)}>Remove</button>
+          <button onClick={() => onRemove(index)} disabled={data.length <= 1}>Remove</button>
         </div>
       ))}
       <button onClick={onAdd}>Add Education</button>
@@ -50,7 +50,7 @@ const SkillsSection = ({ data, onAdd, onRemove }) => {
             <input type="text" placeholder="Duration" value={item.duration} />
             <textarea placeholder="Details" value={item.details}></textarea>
           </div>
-          <button onClick={() => onRemove(index)}>Remove</button>
+          <button onClick={() => onRemove(index)} disabled={data.length <= 1}>Remove</button>
         </div>
       ))}
       <button onClick={onAdd}>Add Skill</button>
@@ -69,7 +69,7 @@ const HobbiesSection = ({ data, onAdd, onRemove }) => {
             <input type="text" placeholder="Duration" value={item.duration} />
             <textarea placeholder="Details" value={item.details}></textarea>
           </div>
-          <button onClick={() => onRemove(index)}>Remove</button>
+          <button onClick={() => onRemove(index)} disabled={data.length <= 1}>Remove</button>
         </div>
       ))}
       <button onClick={onAdd}>Add Hobby</button>
