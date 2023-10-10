@@ -21,8 +21,6 @@ const ExperienceSection = ({ data, onAdd, onRemove, setData }) => {
     setData(newExperienceData);
   };
 
-  
-
   return (
     <div>
       {data.map((item, index) => (
