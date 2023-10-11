@@ -98,7 +98,7 @@ const HobbiesSection = ({ data, onAdd, onRemove }) => {
           <button onClick={() => onRemove(index)} disabled={data.length <= 1}>Remove</button>
         </div>
       ))}
-      <button onClick={onAdd}>Add Hobby</button>
+      <button onClick={onAdd}>Add Hobby/s</button>
     </div>
   );
 };
