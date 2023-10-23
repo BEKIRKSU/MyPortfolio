@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div className="App">
       <Link to="/profile">
-        <button className="profile-button">My-Profile</button>
+        <button className="profile-button">MyProfile</button>
       </Link>
 
       <header className="App-header">
