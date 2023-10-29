@@ -11,7 +11,7 @@ const HomePage = () => {
 
       <header className="App-header">
         <h1>My Portfolio</h1>
-        <Link to="/Sign-up">
+        <Link to="/profile">
         <button class="make-my-portfolio-button">Make my digital portfolio</button>
         </Link>
       </header>
