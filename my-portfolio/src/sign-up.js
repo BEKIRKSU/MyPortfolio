@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './navbar';
+import Footer from './footer';
 import { useNavigate } from 'react-router-dom'; // Make sure to import useNavigate
 
 const SignUp = () => {

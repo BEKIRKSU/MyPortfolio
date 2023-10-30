@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from './Navbar';
-import './ProfilePage.css';
+import Navbar from './navbar';
+import './profilePage.css';
 // import CountryList from './CountryList';
-import ProfileForm from './ProfileForm';
-import MediaUpload from './MediaUpload';
+import ProfileForm from './profileForm';
+import MediaUpload from './mediaUpload';
 
 
 const ProfilePage = () => {

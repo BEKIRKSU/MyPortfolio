@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 import HomePage from './home';
-import ProfilePage from './ProfilePage';
-import SignUp from './Sign-up'; 
-import Footer from './Footer';
+import ProfilePage from './profilePage';
+import SignUp from './sign-up'; 
+import Footer from './footer';
 
 
 function App() {
