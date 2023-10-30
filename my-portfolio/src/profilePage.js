@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './navbar';
-import './profilePage.css';
+import './ProfilePage.css';
 // import CountryList from './CountryList';
 import ProfileForm from './profileForm';
 import MediaUpload from './mediaUpload';
